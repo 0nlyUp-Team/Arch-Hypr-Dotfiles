@@ -1,0 +1,13 @@
+configuration {
+    font: "JetBrains Mono 12";
+    width: 30%;
+    lines: 7;
+}
+
+entry {
+    placeholder: "Действие";
+}
+
+listview {
+    scrollbar: false;
+}

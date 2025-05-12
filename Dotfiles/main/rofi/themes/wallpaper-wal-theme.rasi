@@ -1,0 +1,92 @@
+        /** Default settings, every widget inherits from this. */
+        * {
+            background-color: transparent;
+            border-radius:0.5em;
+            text-color:white;
+        }
+
+        entry {
+            border: 2px 0px;
+            border-color:  #9F9EA560;
+            background-color: #9F9EA560;
+            padding:       4px;
+            placeholder:       "Type to filter";
+            placeholder-color: transparent;
+            font: inherit;
+            cursor: text;
+        }
+        inputbar {
+            spacing: 0;
+            children: [  icon-keyboard, entry, mode-switcher ];
+            font:   "mono 14";
+        }
+
+        mode-switcher {
+            spacing: 2px;
+            border: 2px;
+            border-radius: 0px 4px 4px 0px;
+            border-color: none;
+            background-color: none;
+            font: inherit;
+        }
+        button {
+            background-color: grey;
+            border-color: darkgrey;
+            font: inherit;
+            cursor: pointer;
+        }
+        button selected {
+            background-color: lightgrey;
+            text-color:       white;
+        }
+
+        icon-keyboard {
+            border:        4px 4px 4px 4px;
+            border-color:  none;
+            background-color: none;
+            padding: 0px 10px 0px 10px;
+            expand: false;
+            size: 1.5em;
+            filename: "keyboard";
+        }
+
+        window {
+            anchor: center;
+            location: center;
+            width:50%;
+            background-color: #7886AB75; /* ФОН ROFI*/
+            padding:1.2em;
+            border-color: #BEBBBF;
+            border:  0.2em 0.2em 0.2em;
+        }
+        mainbox {spacing:1em;}
+        listview {
+            lines: 3;
+            columns: 6;
+            spacing: 1.2em;
+            fixed-columns: true;
+        }
+        element {
+            orientation:vertical;
+            border:0.15em;
+            border-radius:12px ;
+            border-color:#7886AB;
+            background-color: #D7CED285; /* Фон Плиток*/
+            cursor: pointer;
+        }
+
+        element selected {
+            background-color:#EC9AD980; 
+            border-color: #BEBBBF;
+            text-color:black;
+            color: #A57199;
+        }
+        element-icon {
+            size: 96px;
+            cursor: inherit;
+        }
+        element-text {
+            horizontal-align: 0.5;
+            cursor: inherit;
+            color: #030303;
+        }

@@ -1,0 +1,8 @@
+@theme "~/.config/rofi/themes/hyprmod-wal-theme.rasi"
+configuration {
+    modi: "drun,run,window";
+    show-icons: false;
+    lines: 2;
+    font: "SF Mono 12";
+    terminal: "kitty";
+}

@@ -1,0 +1,19 @@
+{
+  "positionX": "right",
+  "positionY": "top",
+  "layer": "overlay",
+  "control-center-margin-top": 10,
+  "control-center-margin-bottom": 10,
+  "control-center-margin-right": 10,
+  "notification-positions": "top-right",
+  "transition-time": 200,
+  "notification-timeout": 5000,
+  "hide-on-clear": true,
+  "hide-on-action": true,
+  "widgets": [],
+  "control-center": false,
+  "notification-center": false,
+  "markup": true,
+  "script-fail-notify": true
+}
+

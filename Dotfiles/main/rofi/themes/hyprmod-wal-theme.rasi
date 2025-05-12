@@ -1,0 +1,53 @@
+* {
+    /* Основные настройки */
+        background-color: #EC9AD945;
+        border:0;
+    /* Размеры и отступы */
+        width: 20%;
+        padding: 10px;
+        margin: 0;
+        border-radius: 0.4 em;
+        spacing: 0;
+    /* Стиль списка */
+        listview: true;
+        lines: 5;
+        fixed-height: true; 
+    /* Убираем иконки */
+        show-icons: false;
+}
+#inputbar {
+    children: [prompt, entry];
+}
+#entry {
+    padding: 5px;
+    text-color: #CDD6F4;
+    border: 3;
+    background-color: #2c2c2ce7;
+    border-color: #dddddd;
+}
+#prompt {
+    padding: 5px;
+    text-color:#c0c0c0;
+    background-color:#00000000;
+    border:0;
+}
+#listview {
+    padding: 5px;
+    dynamic: true;
+    scrollbar: false;
+    background-color:#00000000;
+}
+#element {
+    padding: 5px;
+    background-color: #7886AB;
+    border-color: #A57199;
+    border: 0;
+    border: 4px ;
+    margin: 4px;
+}
+#element selected {
+    text-color: #030303;
+    background-color: #EC9AD9;
+    border-color: #9F9EA5;
+    border:4;
+}

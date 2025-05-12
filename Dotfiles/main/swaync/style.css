@@ -1,0 +1,47 @@
+@define-color background rgba(20,23,25, 0.95);
+@define-color foreground ##c7c8c8;
+@define-color accent #{color4};
+@define-color critical #{color1};
+
+* {
+  all: unset;
+  font-family: "Iosevka", "JetBrainsMono Nerd Font", monospace;
+  font-size: 14px;
+  color: @foreground;
+  background-color: transparent;
+}
+
+.notification {
+  background-color: @background;
+  border: 1px solid @accent;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.notification.critical {
+  border-color: @critical;
+}
+
+.notification-title {
+  font-weight: bold;
+  color: @accent;
+  margin-bottom: 5px;
+}
+
+.notification-body {
+  opacity: 0.9;
+}
+
+.image {
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.progress {
+  border-radius: 4px;
+  background-color: @accent;
+  min-height: 4px;
+  margin-top: 8px;
+}

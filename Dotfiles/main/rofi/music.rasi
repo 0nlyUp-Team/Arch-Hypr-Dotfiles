@@ -1,0 +1,17 @@
+configuration {
+    font: "Fira Code Nerd Font 12";
+    width: 25%;
+}
+
+listview {
+    lines: 8;
+    fixed-height: true;
+}
+
+entry {
+    placeholder: "Действие...";
+}
+
+element {
+    padding: 5px;
+}

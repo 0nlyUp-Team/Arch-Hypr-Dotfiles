@@ -1,0 +1,38 @@
+        * {
+            background-color : #9F9EA545;
+            color: #ffffff;;
+            border: 0;
+            border-radius: 5px;
+        }
+        window {
+            padding: 10px;
+            border-radius: 5px;
+        }
+        mainbox {
+            border: 0;
+            padding: 10px;
+        }
+        listview {
+            background-color : #A5719945;
+            border-radius: 5px;
+            margin: 0;
+            padding: 0;
+        }
+        element {
+            padding: 8px 15px;
+            border: 0;
+            margin: 0;
+            background-color: #333333;
+            color: #ffffff;
+            border-radius: 5px;
+            height: 35px;
+        }
+        element selected {
+            background-color: #9F9EA5;
+            /*color: #ffffff;*/
+            color: #7886AB;
+        }
+        element highlighted {
+                background-color: #555555;
+            color: #ffffff;
+        }

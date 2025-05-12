@@ -1,0 +1,20 @@
+include ~/.cache/wal/colors-kitty.conf
+wayland_titlebar_color system
+font_size 10
+font_family SF Mono
+bold_font        auto
+italic_font      auto
+bold_italic_font auto 
+background_opacity 0.65
+window_padding_width 8 
+window_margin_width 8
+window_border_width 0
+confirm_os_window_close 0
+map ctrl+plus increase_font_size
+map ctrl+minus decrease_font_size
+map ctrl+0 reset_font_size
+map ctrl+t launch --type=tab
+map ctrl+tab next_tab
+map ctrl+shift+tab previous_tab
+hide_window_decorations yes
+active_tab_title_template "{title}" 

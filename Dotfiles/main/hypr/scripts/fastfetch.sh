@@ -1,0 +1,31 @@
+#!bin/bash
+image=
+path=$HOME/fastfetch-images/pmkm
+array=(
+	"$path/1.png"
+	"$path/2.png"
+	"$path/3.png"
+	"$path/4.png"
+	"$path/5.png"
+	"$path/6.png"
+	"$path/7.png"
+	"$path/8.png"
+	"$path/9.png"
+	"$path/10.png"
+	"$path/11.png"
+	"$path/12.png"
+	"$path/13.png"
+	"$path/14.png"
+	"$path/15.png"
+	"$path/16.png"
+	"$path/17.png"
+	"$path/18.png"
+	"$path/19.png"
+	"$path/20.png"
+	"$path/21.png"
+	"$path/22.png"
+	"$path/23.png"
+	"$path/24.png"
+)
+random="${array[RANDOM % ${#array[@]}]}"
+fastfetch -l $random

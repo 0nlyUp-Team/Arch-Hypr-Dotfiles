@@ -1,0 +1,11 @@
+@theme "~/.config/rofi/themes/wallpaper-wal-theme.rasi"
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    lines: 2;
+    icon-theme: "Papirus";
+    font: "SF Mono 10";
+    icon-size: 12;
+    icon-spacing: 0;
+    terminal: "kitty";
+}
