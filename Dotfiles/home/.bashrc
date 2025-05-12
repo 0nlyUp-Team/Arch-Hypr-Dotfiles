@@ -1,4 +1,9 @@
 #Алиасы:
+	alias git_push='git push origin main'
+	git_commit() {
+ 	    git add .
+  	    git commit -m "$*"
+    	}
 	alias randomfetch='sh .config/hypr/scripts/fastfetch.sh'
 	# Yay
 		alias ysearch='yay -Ss'

@@ -1,0 +1,28 @@
+{
+    "checksum": "664720315b5ee5a161c61f671fefce6d",
+    "wallpaper": "/home/unner/Wallpapers/Ellen-Joe3.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#0A0A16",
+        "foreground": "#c1c1c4",
+        "cursor": "#c1c1c4"
+    },
+    "colors": {
+        "color0": "#0A0A16",
+        "color1": "#473856",
+        "color2": "#693852",
+        "color3": "#624864",
+        "color4": "#962A40",
+        "color5": "#8E566C",
+        "color6": "#736085",
+        "color7": "#c1c1c4",
+        "color8": "#59596c",
+        "color9": "#473856",
+        "color10": "#693852",
+        "color11": "#624864",
+        "color12": "#962A40",
+        "color13": "#8E566C",
+        "color14": "#736085",
+        "color15": "#c1c1c4"
+    }
+}

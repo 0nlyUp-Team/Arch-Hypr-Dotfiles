@@ -4,5 +4,5 @@ DotFiles For Hyprland on Arch Linux!
 ### Waybar Themes [with Pywal16 Support] ###
 ## 🌙 Dark Waybar Theme 
 ![arch.css](Images/waybar_dark.png)
-## ☀️ Light Waybar Theme [Pywal16 Support]
+## ☀️ Light Waybar Theme
 ![arch.css](Images/waybar_light.png)

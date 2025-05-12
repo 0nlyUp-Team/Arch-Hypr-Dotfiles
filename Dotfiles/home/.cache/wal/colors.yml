@@ -1,0 +1,24 @@
+wallpaper: "/home/unner/Wallpapers/ellen-joe.jpg"
+
+special:
+    background: "#1c1414"
+    foreground: "#c6c4c4"
+    cursor: "#c6c4c4"
+
+colors:
+    color0: "#1c1414"
+    color1: "#E74675"
+    color2: "#B06B8A"
+    color3: "#EE5D8E"
+    color4: "#988382"
+    color5: "#A89698"
+    color6: "#D39BA9"
+    color7: "#c6c4c4"
+    color8: "#725e5e"
+    color9: "#E74675"
+    color10: "#B06B8A"
+    color11: "#EE5D8E"
+    color12: "#988382"
+    color13: "#A89698"
+    color14: "#D39BA9"
+    color15: "#c6c4c4"

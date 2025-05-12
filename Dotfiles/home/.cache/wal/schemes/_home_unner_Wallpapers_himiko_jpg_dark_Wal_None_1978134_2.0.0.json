@@ -1,0 +1,28 @@
+{
+    "checksum": "52869801ba7d72beb755fadd4986b31c",
+    "wallpaper": "/home/unner/Wallpapers/himiko.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d1136",
+        "foreground": "#c2c3cc",
+        "cursor": "#c2c3cc"
+    },
+    "colors": {
+        "color0": "#0d1136",
+        "color1": "#5B5995",
+        "color2": "#C44D8A",
+        "color3": "#638FBA",
+        "color4": "#AEA4A7",
+        "color5": "#D3B3AE",
+        "color6": "#D8C3B2",
+        "color7": "#c2c3cc",
+        "color8": "#636579",
+        "color9": "#5B5995",
+        "color10": "#C44D8A",
+        "color11": "#638FBA",
+        "color12": "#AEA4A7",
+        "color13": "#D3B3AE",
+        "color14": "#D8C3B2",
+        "color15": "#c2c3cc"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "checksum": "4839e3a12532645c46ff521bf2179d43",
+    "wallpaper": "/home/unner/Wallpapers/4779866-hd_1920_1080_30fps.mp4",
+    "alpha": "100",
+    "special": {
+        "background": "#202325",
+        "foreground": "#c7c8c8",
+        "cursor": "#c7c8c8"
+    },
+    "colors": {
+        "color0": "#202325",
+        "color1": "#7F7F81",
+        "color2": "#7E8183",
+        "color3": "#909192",
+        "color4": "#9E9FA1",
+        "color5": "#AFB0B0",
+        "color6": "#BEC0C1",
+        "color7": "#c7c8c8",
+        "color8": "#64737a",
+        "color9": "#7F7F81",
+        "color10": "#7E8183",
+        "color11": "#909192",
+        "color12": "#9E9FA1",
+        "color13": "#AFB0B0",
+        "color14": "#BEC0C1",
+        "color15": "#c7c8c8"
+    }
+}

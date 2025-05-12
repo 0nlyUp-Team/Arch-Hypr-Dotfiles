@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/unner/Wallpapers/ellen-joe.jpg"
+let background = "#1c1414"
+let foreground = "#c6c4c4"
+let cursor     = "#c6c4c4"
+
+" Colors
+let color0  = "#1c1414"
+let color1  = "#E74675"
+let color2  = "#B06B8A"
+let color3  = "#EE5D8E"
+let color4  = "#988382"
+let color5  = "#A89698"
+let color6  = "#D39BA9"
+let color7  = "#c6c4c4"
+let color8  = "#725e5e"
+let color9  = "#E74675"
+let color10 = "#B06B8A"
+let color11 = "#EE5D8E"
+let color12 = "#988382"
+let color13 = "#A89698"
+let color14 = "#D39BA9"
+let color15 = "#c6c4c4"

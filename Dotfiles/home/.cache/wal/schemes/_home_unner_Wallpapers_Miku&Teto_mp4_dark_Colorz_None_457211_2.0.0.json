@@ -1,0 +1,28 @@
+{
+    "checksum": "71914d75e8e8380268d67cb97ff72d96",
+    "wallpaper": "/home/unner/Wallpapers/Miku&Teto.mp4",
+    "alpha": "100",
+    "special": {
+        "background": "#1b1e21",
+        "foreground": "#c6c6c7",
+        "cursor": "#c6c6c7"
+    },
+    "colors": {
+        "color0": "#1b1e21",
+        "color1": "#5C95A8",
+        "color2": "#4EAED5",
+        "color3": "#61BADE",
+        "color4": "#62C5E5",
+        "color5": "#A7B9C3",
+        "color6": "#D1D9DD",
+        "color7": "#c6c6c7",
+        "color8": "#616b76",
+        "color9": "#5C95A8",
+        "color10": "#4EAED5",
+        "color11": "#61BADE",
+        "color12": "#62C5E5",
+        "color13": "#A7B9C3",
+        "color14": "#D1D9DD",
+        "color15": "#c6c6c7"
+    }
+}

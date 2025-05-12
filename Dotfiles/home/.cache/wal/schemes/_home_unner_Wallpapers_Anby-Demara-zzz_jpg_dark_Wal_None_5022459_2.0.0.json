@@ -1,0 +1,28 @@
+{
+    "checksum": "b6d33a50f490a33b8dca15a24174b747",
+    "wallpaper": "/home/unner/Wallpapers/Anby-Demara-zzz.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#101112",
+        "foreground": "#c3c3c3",
+        "cursor": "#c3c3c3"
+    },
+    "colors": {
+        "color0": "#101112",
+        "color1": "#988C75",
+        "color2": "#6F7886",
+        "color3": "#7B8592",
+        "color4": "#999EA5",
+        "color5": "#B8BEC8",
+        "color6": "#C9CFD7",
+        "color7": "#c3c3c3",
+        "color8": "#596d6d",
+        "color9": "#988C75",
+        "color10": "#6F7886",
+        "color11": "#7B8592",
+        "color12": "#999EA5",
+        "color13": "#B8BEC8",
+        "color14": "#C9CFD7",
+        "color15": "#c3c3c3"
+    }
+}
