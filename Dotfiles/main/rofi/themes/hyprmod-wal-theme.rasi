@@ -1,6 +1,6 @@
 * {
     /* Основные настройки */
-        background-color: #EC9AD945;
+        background-color: #AFB0B045;
         border:0;
     /* Размеры и отступы */
         width: 20%;
@@ -27,7 +27,7 @@
 }
 #prompt {
     padding: 5px;
-    text-color:#c0c0c0;
+    text-color:#c7c8c8;
     background-color:#00000000;
     border:0;
 }
@@ -39,15 +39,15 @@
 }
 #element {
     padding: 5px;
-    background-color: #7886AB;
-    border-color: #A57199;
+    background-color: #7E8183;
+    border-color: #7F7F81;
     border: 0;
     border: 4px ;
     margin: 4px;
 }
 #element selected {
-    text-color: #030303;
-    background-color: #EC9AD9;
-    border-color: #9F9EA5;
+    text-color: #202325;
+    background-color: #AFB0B0;
+    border-color: #909192;
     border:4;
 }
