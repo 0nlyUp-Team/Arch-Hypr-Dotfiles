@@ -1,0 +1,55 @@
+@import url('../../../.cache/wal/colors-waybar.css');
+* {min-height:0;font-family:"Symbols Nerd Font, SF Mono";}
+window#waybar {
+    background-color:alpha(@color0,0.53);
+    border-radius:8.5px;
+    text-shadow:inherit; /* FIX FUCKING gtk.css TEXT BUG */
+}
+/* Workspace Buttons*/
+#workspaces button {
+    color:@foreground;
+    text-shadow:inherit; /* FIX FUCKING gtk.css TEXT BUG */
+    outline:inherit;border:inherit;background:inherit;
+    box-shadow:inset 0 0 4px transparent;
+    margin:0 2px;
+    padding:6px;
+    transition:all 0.4s ease;
+    font-size:14px;
+    font-weight:normal;
+}
+#workspaces button:hover {
+    color:@foreground;
+    /* background: alpha(@color2, 0.5); */
+    border: none;
+    box-shadow:inset 0 0 4px @color2;
+    outline: none;
+    border-radius: 8px;    
+}
+#workspaces button.active {
+    color: @color2;
+    background: alpha(@color13, 0.15);
+    border: none;
+    box-shadow:inset 0 0 6.5px @color2;
+    border-radius: 8px;
+    font-weight: normal; /* Для консистентности */
+}
+
+#custom-logo{
+    font-size:21px;
+    color:@color4;
+    padding:0 0 0 14px;
+}
+
+
+
+
+
+
+
+
+#battery {font-size:14px;color:#dddddd;border:none;outline:none;}
+#battery.charging {color:#9dff00;border:none;outline:none;}
+#battery.critical {color:#e20000;border:none;outline:none;}
+#battery.full {color:#007ce2;border:none;outline:none;}
+
+#custom-separator{margin:0 0px;color:alpha(@color15,0.8);font-size:21px;border:none;outline:none;}

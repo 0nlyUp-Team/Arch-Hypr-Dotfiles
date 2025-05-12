@@ -1,0 +1,70 @@
+@import url('../../.cache/wal/colors-waybar.css');
+* {min-height:0;font-family:"Symbols Nerd Font, SF Mono";font-size:14px;}
+window#waybar {
+    background-color:alpha(@color0,0.5);
+}
+/* Workspace Buttons*/
+#workspaces button {
+    color: @foreground;
+    box-shadow:none;outline:none;border:none;background:none;
+    margin:0em 0.2em;
+}
+
+#workspaces button:hover {
+    background: alpha(@color0, 0.5);
+    border:none;box-shadow:none;outline:none;
+}
+
+#workspaces button.active {
+    color: @foreground;
+    background: alpha(@color13, 0.15);  /* активный можно чуть ярче */
+    border:none;box-shadow:none;outline:none;
+    border-radius:6px;
+    outline: 12px solid @color3;
+    outline-offset: 2px;
+}
+
+/* Modules */
+#window,#custom-weather,#custom-swaync,#language,#custom-microphone,#clock,
+#pulseaudio,#network,#memory,#tray,#temperature,#cpu,#custom-music {
+    border:none;
+    border-radius:0px;
+    color:@foreground;
+    margin: 0em 0.4em;
+}
+/* Modules Hover */
+#window:hover,#custom-weather:hover,#custom-kernel:hover,#custom-swaync:hover,#language:hover,#temperature:hover,
+#cpu:hover,#custom-microphone:hover,#clock:hover,#pulseaudio:hover,#network:hover,#memory:hover,#tray:hover,#custom-music:hover{
+    border:none;
+    color:@foreground;
+}
+/* Battery */
+#battery {
+  font-size: 14px;
+  color: #dddddd;
+}
+#battery.charging {
+  color: #6aff6a;  /* зелёный при зарядке */
+  font-size:18px;
+}
+#battery.critical {
+  color: #ff5555;  /* красный при <10% */
+  font-size:18px;
+}
+#battery.full {
+  color: #00bcd4;
+  font-size:18px;
+  border-radius:280px;
+  border:none;
+}
+/* Separators */
+#custom-left_separator,#custom-right_separator{
+    color:alpha(@color13,0.8);
+    font-size:21px;
+    border:none;
+}
+
+#custom-logo{
+    font-size:21px;
+    color:@color2;
+}
