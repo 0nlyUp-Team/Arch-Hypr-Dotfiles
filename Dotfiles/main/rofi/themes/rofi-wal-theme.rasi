@@ -1,5 +1,5 @@
         * {
-            background-color : #90919245;
+            background-color : #A2969A45;
             color: #ffffff;;
             border: 0;
             border-radius: 5px;
@@ -13,7 +13,7 @@
             padding: 10px;
         }
         listview {
-            background-color : #7F7F8145;
+            background-color : #7E778445;
             border-radius: 5px;
             margin: 0;
             padding: 0;
@@ -28,9 +28,9 @@
             height: 35px;
         }
         element selected {
-            background-color: #909192;
+            background-color: #A2969A;
             /*color: #ffffff;*/
-            color: #7E8183;
+            color: #C36D8F;
         }
         element highlighted {
                 background-color: #555555;

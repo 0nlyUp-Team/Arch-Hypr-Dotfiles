@@ -7,8 +7,8 @@
 
         entry {
             border: 2px 0px;
-            border-color:  #90919260;
-            background-color: #90919260;
+            border-color:  #A2969A60;
+            background-color: #A2969A60;
             padding:       4px;
             placeholder:       "Type to filter";
             placeholder-color: transparent;
@@ -54,9 +54,9 @@
             anchor: center;
             location: center;
             width:50%;
-            background-color: #7E818375; /* ФОН ROFI*/
+            background-color: #C36D8F75; /* ФОН ROFI*/
             padding:1.2em;
-            border-color: #9E9FA1;
+            border-color: #DEABAD;
             border:  0.2em 0.2em 0.2em;
         }
         mainbox {spacing:1em;}
@@ -70,16 +70,16 @@
             orientation:vertical;
             border:0.15em;
             border-radius:12px ;
-            border-color:#7E8183;
-            background-color: #BEC0C185; /* Фон Плиток*/
+            border-color:#C36D8F;
+            background-color: #D3B6C985; /* Фон Плиток*/
             cursor: pointer;
         }
 
         element selected {
-            background-color:#AFB0B080; 
-            border-color: #9E9FA1;
+            background-color:#E5C3BA80; 
+            border-color: #DEABAD;
             text-color:black;
-            color: #7F7F81;
+            color: #7E7784;
         }
         element-icon {
             size: 96px;
@@ -88,5 +88,5 @@
         element-text {
             horizontal-align: 0.5;
             cursor: inherit;
-            color: #202325;
+            color: #131119;
         }

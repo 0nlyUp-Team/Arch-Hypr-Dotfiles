@@ -1,7 +1,7 @@
         # ~/.config/hypr/hyprlock.conf
 
         general {
-            disable_loading_bar = truevn
+            disable_loading_bar = true
             hide_cursor = true
             grace = 0
         }
