@@ -1,14 +1,14 @@
 @import url('../../../.cache/wal/colors-waybar.css');
 * {min-height:0;font-family:"Symbols Nerd Font, SF Mono";}
 window#waybar {
-    background-color:alpha(@color0,0.53);
+    background-color:alpha(white,0.6);
     border-radius:8.5px;
-    text-shadow:inherit; /* FIX FUCKING gtk.css TEXT BUG */
+    text-shadow:inherit; /* FIX FUCKING gtk.css TEXT-SHADOW */
 }
 /* Workspace Buttons*/
 #workspaces button {
-    color:@foreground;
-    text-shadow:inherit; /* FIX FUCKING gtk.css TEXT BUG */
+    color:alpha(@color0,0.8);
+    text-shadow:inherit; /* FIX FUCKING gtk.css TEXT-SHADOW */
     outline:inherit;border:inherit;background:inherit;
     box-shadow:inset 0 0 4px transparent;
     transition:all 0.4s ease;
@@ -34,85 +34,85 @@ window#waybar {
 }
 
 #custom-logo{
-    font-size:21px;color:@color6;
+    font-size:21px;color:alpha(@color0,0.8);
     padding:0px 2px 0px 12px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #custom-weather{
-    font-size:14px;color:@foreground;
+    font-size:14px;color:@color0;
     padding:0px 4px 0px 0px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #cpu{
-    font-size:14px;color:@foreground;
+    font-size:14px;color:@color0;
     padding:0px 6px 0px 6px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #temperature{
-    font-size:14px;color:@foreground;
+    font-size:14px;color:@color0;
     padding:0px 6px 0px 6px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #memory{
-    font-size:14px;color:@foreground;
+    font-size:14px;color:@color0;
     padding:0px 6px 0px 6px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #network{
-    font-size:14px;color:@foreground;
+    font-size:14px;color:@color0;
     padding:0px 6px 0px 6px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #custom-swaync{
-    font-size:14px;color:@foreground;
+    font-size:14px;color:@color0;
     padding:0px 6px 0px 6px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #tray{
-    font-size:14px;color:@foreground;
+    font-size:14px;color:@color0;
     padding:0px 6px 0px 6px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #pulseaudio{
-    font-size:14px;color:@foreground;
+    font-size:14px;color:@color0;
     padding:0px 6px 0px 6px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #custom-microphone{
-    font-size:14px;color:@foreground;
+    font-size:14px;color:@color0;
     padding:0px 6px 0px 6px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #custom-toggle_blur{
-    font-size:21px;color:@foreground;
+    font-size:21px;color:@color0;
     padding:0px 14px 0px 4px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #language{
-    font-size:14px;color:@foreground;
+    font-size:14px;color:@color0;
     padding:0px 6px 0px 6px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #clock{
-    font-size:14px;color:@foreground;
+    font-size:14px;color:@color0;
     padding:0px 6px 0px 6px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #custom-music{
-    font-size:16px;color:@foreground;
+    font-size:16px;color:@color0;
     padding:0px 6px 0px 6px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
@@ -122,8 +122,7 @@ window#waybar {
 #battery.critical {color:#e20000;border:none;outline:none;}
 #battery.full {color:#007ce2;border:none;outline:none;}
 
-#custom-separator{color:@foreground;font-size:21px;border:none;outline:none;}
-
+#custom-separator{font-size:21px;color:alpha(@color0,0.8);font-size:21px;border:none;outline:none;}
 #custom-logo:hover,
 #custom-weather:hover,
 #cpu:hover,

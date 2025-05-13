@@ -16,7 +16,7 @@ case "$BASENAME" in
         bash ~/.config/kitty/scripts/kitty-dark-pywal.sh
       ;;
     arch2)
-        bash ~/.config/kitty/scripts/kitty-light-pywal.sh
+        bash ~/.config/kitty/scripts/kitty-light-pywal2.sh
       ;;
 esac
 pkill waybar
