@@ -1,4 +1,4 @@
-@import url('../../.cache/wal/colors-waybar.css');
+@import url('../../../.cache/wal/colors-waybar.css');
 * {min-height:0;font-family:"Symbols Nerd Font, SF Mono";}
 window#waybar {
     background-color:alpha(@color0,0.53);

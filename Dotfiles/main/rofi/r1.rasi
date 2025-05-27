@@ -1,0 +1,62 @@
+* {
+  background-color: rgb(20,20,20,20%);
+  text-color:white;
+  spacing: 0;
+  width: 512px;
+  font: "SF Mono 12";
+}
+window {
+  width:512px;
+  height:350px;
+}
+inputbar {
+  background-color: rgba(20,20,20,15%);
+  border-radius: 1em;
+  border:none;
+  children: [prompt,entry];
+  padding: 0px;
+  margin: 0.75em;
+}
+prompt {
+  text-color: rgb(255,255,255);
+  padding: 14px;
+  background-color: transparent;
+}
+textbox {
+  padding: 8px 16px;
+  background-color: transparent;
+}
+entry {
+  text-color: rgb(255, 255, 255);
+  padding: 16px;
+  background-color: transparent;
+}
+listview {
+  cycle: false;
+  scrollbar: false;
+  background-color: transparent;
+  margin: 21px;
+}
+element {
+  width: 20%;
+  padding: 0.6em;
+  background-color: transparent;
+  text-color: rgb(160,160,160);
+}
+element selected {
+  background-color: rgb(255,255,255,24%);
+  border-radius: 14px;
+  text-color: #fff;
+  margin: 8px;
+}
+element-text {
+  background-color: transparent;
+  text-color: inherit;
+}
+element-icon {
+  background-color: transparent;
+}
+
+configuration {
+  click-to-exit: true;
+}

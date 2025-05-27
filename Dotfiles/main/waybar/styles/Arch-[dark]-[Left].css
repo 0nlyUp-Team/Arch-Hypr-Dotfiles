@@ -1,4 +1,4 @@
-@import url('../../.cache/wal/colors-waybar.css');
+@import url('../../../.cache/wal/colors-waybar.css');
 * {min-height:0;font-family:"Symbols Nerd Font, SF Mono";}
 window#waybar {
     background-color:alpha(@color0,0.53);
@@ -47,67 +47,67 @@ window#waybar {
 
 #cpu{
     font-size:14px;color:@foreground;
-    padding:0px 6px 0px 6px;
+    padding:6px 0px 6px 0px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #temperature{
     font-size:14px;color:@foreground;
-    padding:0px 6px 0px 6px;
+    padding:6px 0px 6px 0px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #memory{
     font-size:14px;color:@foreground;
-    padding:0px 6px 0px 6px;
+    padding:6px 0px 6px 0px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #network{
     font-size:14px;color:@foreground;
-    padding:0px 6px 0px 6px;
+    padding:6px 0px 6px 0px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #custom-swaync{
     font-size:14px;color:@foreground;
-    padding:0px 6px 0px 6px;
+    padding:6px 0px 6px 0px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #tray{
     font-size:14px;color:@foreground;
-    padding:0px 6px 0px 6px;
+    padding:6px 0px 6px 0px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #pulseaudio{
     font-size:14px;color:@foreground;
-    padding:0px 6px 0px 6px;
+    padding:6px 0px 6px 0px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #custom-microphone{
     font-size:14px;color:@foreground;
-    padding:0px 6px 0px 6px;
+    padding:6px 0px 6px 0px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #language{
     font-size:14px;color:@foreground;
-    padding:0px 6px 0px 6px;
+    padding:6px 0px 6px 0px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #clock{
     font-size:14px;color:@foreground;
-    padding:0px 6px 0px 6px;
+    padding:6px 0px 6px 0px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #custom-music{
     font-size:16px;color:@foreground;
-    padding:0px 6px 0px 6px;
+    padding:6px 0px 6px 0px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 

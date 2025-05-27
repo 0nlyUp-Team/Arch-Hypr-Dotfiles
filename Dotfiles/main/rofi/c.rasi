@@ -1,0 +1,6 @@
+configuration {
+    font:         "Symbols Nerd Font 12";
+    show-icons:   false;
+    transparency: "real";
+    location:     0;
+}

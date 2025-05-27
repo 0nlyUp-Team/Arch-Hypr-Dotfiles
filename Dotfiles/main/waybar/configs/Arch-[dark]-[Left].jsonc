@@ -2,11 +2,11 @@
     "reload_style_on_change": true,
     "exclusive": true,
     "layer": "bottom",
-    "position": "top",
-    "width": 1,
-    "height": 40,
+    "position": "left",
+    "height": 1,
+    "width": 40,
     "margin-top":16,
-    "margin-bottom":10,
+    "margin-bottom":16,
     "margin-left":10,
     "margin-right":10,
     "spacing":4,
@@ -91,7 +91,7 @@
         "format-ru": " Ru" 
     },
 "custom/separator": {
-        "format": "|",
+        "format": "-",
         "tooltip": false,
     },
 "custom/test": {
@@ -210,12 +210,12 @@
         "on-click": "pavucontrol"
     },
 "network": {
-        "format-wifi": "{essid}|({signalStrength}%)󰅢[{bandwidthDownBits}]󰅧[{bandwidthUpBits}]",
-        "format-ethernet": "󰌗{ifname}|[{bandwidthDownBits}][{bandwidthUpBits}]",
-        "format-disconnected": " Disconnected",
-        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
-        "on-click": "nm-connection-editor",
-        "interval": 6
+    "format-wifi": " {essid}\n󰅢 {bandwidthDownBits}\n󰅧 {bandwidthUpBits}\n {signalStrength}%",
+    "format-ethernet": "󰌗 {ifname}\n {bandwidthDownBits}\n {bandwidthUpBits}",
+    "format-disconnected": "\nDisconnected",
+    "tooltip-format": "{ifname}\n{ipaddr}/{cidr}",
+    "on-click": "nm-connection-editor",
+    "interval": 6
     },
 "cpu": {
         "format":" {usage}%",

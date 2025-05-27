@@ -31,6 +31,7 @@ color12 ${colors[12]}
 color13 ${colors[13]}
 color14 ${colors[14]}
 color15 ${colors[15]}
+
 wayland_titlebar_color system
 font_size 10
 font_family SF Mono

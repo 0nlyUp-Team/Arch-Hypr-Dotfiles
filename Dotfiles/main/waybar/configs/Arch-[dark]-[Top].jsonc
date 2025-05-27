@@ -276,16 +276,4 @@
         "exec": "~/.config/waybar/scripts/weather.py",
         "return-type": "json"
     }
-    /*BASH WTTR>IN SCRIPT:*/
-    /*"custom/weather": { 
-    "format": "{}",
-    "format-alt": "{alt}: {}",
-    "format-alt-click": "click",
-    "interval": 600,
-    "return-type": "json",
-    "exec": "~/.config/waybar/scripts/weather.sh",
-    "exec-if": "ping wttr.in -c1",
-    "tooltip" : true,
-    }, */
-
 }

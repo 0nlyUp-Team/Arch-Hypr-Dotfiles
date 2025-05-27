@@ -1,13 +1,13 @@
-@import url('../../.cache/wal/colors-waybar.css');
+@import url('../../../.cache/wal/colors-waybar.css');
 * {min-height:0;font-family:"Symbols Nerd Font, SF Mono";}
 window#waybar {
-    background-color:alpha(@color0,0.53);
+    background-color:alpha(white,0.3);
     border-radius:8.5px;
     text-shadow:inherit; /* FIX FUCKING gtk.css TEXT BUG */
 }
 /* Workspace Buttons*/
 #workspaces button {
-    color:@foreground;
+    color:alpha(@background,0.8);
     text-shadow:inherit; /* FIX FUCKING gtk.css TEXT BUG */
     outline:inherit;border:inherit;background:inherit;
     box-shadow:inset 0 0 4px transparent;
@@ -34,7 +34,7 @@ window#waybar {
 }
 
 #custom-logo{
-    font-size:21px;color:@color6;
+    font-size:21px;color:alpha(@background,0.8);
     padding:0px 2px 0px 12px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
@@ -94,7 +94,7 @@ window#waybar {
 }
 
 #language{
-    font-size:14px;color:@foreground;
+    font-size:14px;color:alpha(@background,0.8);
     padding:0px 6px 0px 6px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
