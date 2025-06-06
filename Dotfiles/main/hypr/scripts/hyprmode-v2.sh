@@ -1,7 +1,7 @@
 #!/bin/bash
 config=~/.config/rofi/hyprmode.rasi
 theme=$USER/.config/rofi/themes/hyprmod-wal-theme.rasi
-selected_mode=$(echo -e "Reload\nMinimal\nGame\nDwindle\nMaster\nKawase" | rofi -dmenu -config "/home/unner/.config/rofi/hyprmode.rasi" -p "HyprMode:")
+selected_mode=$(echo -e "Reload\nMinimal\nGame\nDwindle\nMaster\nKawase\nBorder" | rofi -dmenu -config "/home/unner/.config/rofi/hyprmode.rasi" -p "HyprMode:")
 log(){
     notify-send -t 5000 -u low -i dialog-information "Sucess:" "Switched to $selected_mode mode"
 }
@@ -92,6 +92,12 @@ case "$selected_mode" in
             keyword decoration:blur:passes 3;\
             keyword decoration:blur:new_optimizations true;\
             keyword decoration:blur:ignore_opacity true;"
+        ;;
+    "Border")
+        log
+        hyprctl --batch "\
+        keyword general:border_size 4;
+        "
         ;;
     *)
         notify-send -t 5000 -u critical -i dialog-error "Error:" "Unknown mode: $selected_mode"

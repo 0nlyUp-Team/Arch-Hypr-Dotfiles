@@ -1,373 +1,157 @@
 #!/bin/bash
-#Переменные
-CAVA_CONFIG="$HOME/.config/cava/config"
-HYPRLAND_COLORS="$HOME/.config/hypr/conf/colors.conf"
+
+# === Конфигурация ===
 WALLPAPERS_DIR="$HOME/Wallpapers"
-PYWAL_COLORS="$HOME/.cache/wal/colors"
-PYWAL_COLORS_HYPRLAND="$HOME/.cache/wal/colors-hyprland.conf"
-HYPRLOCK_CONFIG="$HOME/.config/hypr/hyprlock.conf"
-ROFI_THEME_FILE="$HOME/.config/rofi/themes/rofi-wal-theme.rasi"
-ROFI_WALLPAPER_THEME_FILE="$HOME/.config/rofi/themes/wallpaper-wal-theme.rasi"
-HYPRMODE_THEME_FILE="$HOME/.config/rofi/themes/hyprmod-wal-theme.rasi"
 THUMB_CACHE="$HOME/.cache/rofi_wallpaper_thumbnails"
+LAST_WALLPAPER_FILE="$HOME/.cache/last_wallpaper.txt"
+
 mkdir -p "$THUMB_CACHE"
 
-#Начало Скрипта
-cd "$WALLPAPERS_DIR" || exit
+# === Функции ===
 
-# Создаем временный файл для данных Rofi
-ROFI_DATA=$(mktemp)
-
-# Обрабатываем все файлы перед запуском Rofi
-while IFS= read -r -d '' file; do
-    filename=$(basename "$file")
-    if [[ "$filename" == *.mp4 || "$filename" == *.MP4 ]]; then
-        thumb="$THUMB_CACHE/${filename}.png"
-        # Генерируем превью только если его нет
-        if [ ! -f "$thumb" ]; then
-            ffmpeg -i "$file" -ss 00:00:01 -vframes 1 -vf "scale=200:-1" "$thumb" 2>/dev/null
+generate_rofi_data() {
+    local data_file=$1
+    cd "$WALLPAPERS_DIR" || exit 1
+    while IFS= read -r -d '' file; do
+        filename=$(basename "$file")
+        if [[ "$filename" == *.mp4 || "$filename" == *.MP4 ]]; then
+            thumb="$THUMB_CACHE/${filename}.png"
+            [ ! -f "$thumb" ] && ffmpeg -i "$file" -ss 00:00:01 -vframes 1 -vf "scale=200:-1" "$thumb" 2>/dev/null
+            icon="$thumb"
+        else
+            icon="$file"
         fi
-        icon="$thumb"
+        echo -en "$filename\0Icon\x1f$icon\n"
+    done < <(find . -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.webp" -o -iname "*.png" -o -iname "*.mp4" -o -iname "*.gif" \) -print0) > "$data_file"
+}
+
+apply_wallpaper() {
+    local selected="$1"
+    local full_path="$HOME/Wallpapers/$selected"
+    echo "$full_path" > "$HOME/.cache/last_wallpaper.txt"
+
+    if [[ "$selected" == *.mp4 || "$selected" == *.MP4 ]]; then
+        #notify-send "Applying Video Wallpaper:" "$selected"
+        notify-send -t 5000 -u low -i dialog-information "Sucess Applying Wallpaper:" "$full_path"
+        pkill swww-daemon
+        pkill mpvpaper
+        local output=$(hyprctl monitors | awk '/Monitor/ {print $2; exit}')
+        mpvpaper -o "--loop --no-audio" "$output" "$full_path" &
+        wal -i "$full_path" --backend Colorz
     else
-        icon="$file"
+       #notify-send "Applying Static Wallpaper:" "$selected"
+        notify-send -t 5000 -u low -i dialog-information "Sucess Applying Wallpaper:" "$full_path"
+        pkill mpvpaper
+        pkill swww-daemon
+        swww-daemon &
+        swww img "$full_path" --transition-type none
+        wal -i "$full_path" --backend Wal
     fi
-    # Добавляем запись с иконкой в буфер
-    echo -en "$filename\0Icon\x1f$icon\n"
-done < <(find . -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.webp" -o -iname "*.png" -o -iname "*.mp4" -o -iname "*.gif" \) -print0) > "$ROFI_DATA"
 
-# Запускаем Rofi с готовыми данными
-SELECTED_WALLPAPER=$(cat "$ROFI_DATA" | rofi -dmenu -config "~/.config/rofi/wallpaper.rasi" -p "Select Wallpaper: ")
-rm "$ROFI_DATA"
+    generate_theme "rofi-dmenu" "$HOME/.config/rofi/themes/rofi-dmenu-theme.rasi"
+    generate_theme "rofi-run" "$HOME/.config/rofi/themes/rofi-run-theme.rasi"
+    generate_theme "hyprland-colors" "$HOME/.config/hypr/conf/colors.conf"
 
-[ -z "$SELECTED_WALLPAPER" ] && exit
+    hyprctl reload
+}
 
-# Установка Обоев
-if [[ "$SELECTED_WALLPAPER" == *.mp4 ]] || [[ "$SELECTED_WALLPAPER" == *.MP4 ]]; then
-  notify-send "Applying Video Wallpaper:" "$SELECTED_WALLPAPER"
-  pkill swww-daemon 
-  pkill mpvpaper
-  output=$(hyprctl monitors | awk '/Monitor/ {print $2; exit}')
-  mpvpaper -o "--loop --no-audio" "$output" "$SELECTED_WALLPAPER" &
-  wal -i "$SELECTED_WALLPAPER" --backend Colorz
+generate_theme() {
+    local template_name="$1"
+    local output_file="$2"
+    local template_path="$HOME/.config/walgen/templates/${template_name}.txt"
+
+    if [ ! -f "$HOME/.cache/wal/colors" ]; then
+        notify-send -t 5000 -u critical -i dialog-error "Error (Caused by rofi-wallpaper.sh)" "File Not Found: $HOME/.cache/wal/colors"
+        return 1
+    fi
+
+    if [ ! -f "$template_path" ]; then
+        notify-send -t 5000 -u critical -i dialog-error "Error (Caused by rofi-wallpaper.sh)" "Template Not Found: $template_path"
+        return 1
+    fi
+
+    mkdir -p "$(dirname "$output_file")"
+
+    local -a colors
+    mapfile -t colors < "$HOME/.cache/wal/colors"
+
+    local -A template_vars=(
+        ["background"]="${colors[0]}"
+        ["foreground"]="${colors[7]}"
+        ["accent"]="${colors[3]}"
+        ["text"]="${colors[15]}"
+        ["black"]="${colors[0]}"
+        ["white"]="${colors[15]}"
+    )
+
+    for i in {0..15}; do
+        hex="${colors[$i]#"#"}"
+        r=$((16#${hex:0:2}))
+        g=$((16#${hex:2:2}))
+        b=$((16#${hex:4:2}))
+        template_vars["color$i"]="${colors[$i]}"
+        template_vars["rgba_color$i"]="rgba($r, $g, $b, 1.0)"
+    done
+
+    local content
+    content=$(<"$template_path")
+
+    # Подстановка обычных переменных
+    for key in "${!template_vars[@]}"; do
+        content=${content//"{{$key}}"/"${template_vars[$key]}"}
+    done
+
+    # Обработка {{rgba_colorX,A}}
+    if grep -q '{{rgba_color[0-9]\{1,2\},[0-9.]\+}}' <<< "$content"; then
+        matches=$(grep -oP '{{rgba_color[0-9]{1,2},[0-9.]+}}' <<< "$content" | sort -u)
+        for match in $matches; do
+            index=$(echo "$match" | grep -oP 'rgba_color\K[0-9]+')
+            alpha=$(echo "$match" | grep -oP ',\K[0-9.]+')
+            hex="${colors[$index]#"#"}"
+            r=$((16#${hex:0:2}))
+            g=$((16#${hex:2:2}))
+            b=$((16#${hex:4:2}))
+            rgba="rgba($r, $g, $b, $alpha)"
+            content="${content//$match/$rgba}"
+        done
+    fi
+
+    if [[ "$template_name" == "hyprland-colors" ]]; then
+        [[ -f "$HOME/.cache/wal/colors" ]] || { notify-send -u critical "Missing" "$HOME/.cache/wal/colors"; return 1; }
+        mapfile -t colors < "$HOME/.cache/wal/colors"
+        > "$HOME/.config/hypr/conf/colors.conf"
+        for i in {0..15}; do
+            printf "\$color%d = 0xff%s\n" $((i+1)) "${colors[$i]#\#}" >> "$HOME/.config/hypr/conf/colors.conf"
+        done
+        notify-send -t 5000 -u normal -i dialog-warning "Debug (Caused by rofi-wallpaper.sh)" "Hyprland Colors Generated: $HOME/.config/hypr/conf/colors.conf"
+        return 0
+    fi
+
+    echo "$content" > "$output_file"
+    notify-send -t 3000 -u low -i dialog-information "Theme Generated" "$output_file"
+}
+
+# === Главная функция ===
+main() {
+    local data_file=$(mktemp)
+    generate_rofi_data "$data_file"
+    local selected=$(cat "$data_file" | rofi -dmenu -config "$HOME/.config/rofi/wallpaper.rasi" -p "Select Wallpaper: ")
+    rm "$data_file"
+    [ -z "$selected" ] && exit 0
+    apply_wallpaper "$selected"
+}
+
+# === Авто-применение последнего обоя ===
+auto_apply_last_wallpaper() {
+    [ -f "$HOME/.cache/last_wallpaper.txt" ] && apply_wallpaper "$(basename "$(cat "$HOME/.cache/last_wallpaper.txt")")"
+}
+
+# === Точка входа ===
+if [[ "$1" == "--restore" ]]; then
+    auto_apply_last_wallpaper
+elif [[ "$1" == "--select" ]]; then
+    main
 else
-  notify-send "Applying Static Wallpaper:" "$SELECTED_WALLPAPER"
-  pkill mpvpaper
-  pkill swww-daemon
-  swww-daemon &
-  swww img "$SELECTED_WALLPAPER" --transition-type none
-  wal -i "$SELECTED_WALLPAPER" --backend Wal
+    echo "Usage: $0 [--restore|--select]"
+    exit 1
 fi
-
-# Темы Других Приложений: Rofi, Cava, Rofi, Hyprlock, Hyprmode
-
-# Rofi THEME
-    mapfile -t colors < "$PYWAL_COLORS"
-    cat <<EOF > "$ROFI_THEME_FILE"
-        * {
-            background-color : ${colors[3]}45;
-            color: #ffffff;;
-            border: 0;
-            border-radius: 5px;
-        }
-        window {
-            padding: 10px;
-            border-radius: 5px;
-        }
-        mainbox {
-            border: 0;
-            padding: 10px;
-        }
-        listview {
-            background-color : ${colors[1]}45;
-            border-radius: 5px;
-            margin: 0;
-            padding: 0;
-        }
-        element {
-            padding: 8px 15px;
-            border: 0;
-            margin: 0;
-            background-color: #333333;
-            color: #ffffff;
-            border-radius: 5px;
-            height: 35px;
-        }
-        element selected {
-            background-color: ${colors[3]};
-            /*color: #ffffff;*/
-            color: ${colors[2]};
-        }
-        element highlighted {
-                background-color: #555555;
-            color: #ffffff;
-        }
-EOF
-
-# CAVA THEME / CONFIG:
-    mapfile -t colors < "$PYWAL_COLORS"
-    cat <<EOF > "$CAVA_CONFIG"
-        ## Configuration file for CAVA.
-        # Remove the ; to change parameters.
-        [color]
-        #background = '#000000'  # Цвет фона (color0 из pywal)
-        gradient = 1
-        gradient_count = 5
-        foreground = '${colors[1]}'  # Основной цвет (color7 из pywal)
-        gradient_color_1 = '${colors[0]}'  # Градиент 1 (color5 из pywal)
-        gradient_color_2 = '${colors[1]}'  # Градиент 2 (color4 из pywal)
-        gradient_color_3 = '${colors[8]}'  # Градиент 3 (color2 из pywal)
-        gradient_color_4 = '${colors[12]}'  # Градиент 4 (color3 из pywal)
-        gradient_color_5 = '${colors[14]}'  # Градиент 5 (color1 из pywal)
-        [general]
-        bars = 16            # Количество столбцов
-        framerate = 60       # Частота обновления
-        autosens = 1         # Автонастройка чувствительности
-        sensitivity = 100    # Базовый уровень чувствительности
-        [input]
-        method = pulse       # Использует PulseAudio (для PipeWire тоже работает)
-        source = auto        # Автовыбор аудиопотока
-        [output]
-        method = ncurses     # Вывод в терминал
-        [smoothing]
-        integral = 25
-EOF
-
-#Запись Wallpaper Темы для Rofi Лаунчера
-    mapfile -t colors < "$PYWAL_COLORS" 
-    cat <<EOF > "$ROFI_WALLPAPER_THEME_FILE"
-        /** Default settings, every widget inherits from this. */
-        * {
-            background-color: transparent;
-            border-radius:0.5em;
-            text-color:white;
-        }
-
-        entry {
-            border: 2px 0px;
-            border-color:  ${colors[3]}60;
-            background-color: ${colors[3]}60;
-            padding:       4px;
-            placeholder:       "Type to filter";
-            placeholder-color: transparent;
-            font: inherit;
-            cursor: text;
-        }
-        inputbar {
-            spacing: 0;
-            children: [  icon-keyboard, entry, mode-switcher ];
-            font:   "mono 14";
-        }
-
-        mode-switcher {
-            spacing: 2px;
-            border: 2px;
-            border-radius: 0px 4px 4px 0px;
-            border-color: none;
-            background-color: none;
-            font: inherit;
-        }
-        button {
-            background-color: grey;
-            border-color: darkgrey;
-            font: inherit;
-            cursor: pointer;
-        }
-        button selected {
-            background-color: lightgrey;
-            text-color:       white;
-        }
-
-        icon-keyboard {
-            border:        4px 4px 4px 4px;
-            border-color:  none;
-            background-color: none;
-            padding: 0px 10px 0px 10px;
-            expand: false;
-            size: 1.5em;
-            filename: "keyboard";
-        }
-
-        window {
-            anchor: center;
-            location: center;
-            width:50%;
-            background-color: ${colors[2]}75; /* ФОН ROFI*/
-            padding:1.2em;
-            border-color: ${colors[12]};
-            border:  0.2em 0.2em 0.2em;
-        }
-        mainbox {spacing:1em;}
-        listview {
-            lines: 3;
-            columns: 6;
-            spacing: 1.2em;
-            fixed-columns: true;
-        }
-        element {
-            orientation:vertical;
-            border:0.15em;
-            border-radius:12px ;
-            border-color:${colors[2]};
-            background-color: ${colors[14]}85; /* Фон Плиток*/
-            cursor: pointer;
-        }
-
-        element selected {
-            background-color:${colors[13]}80; 
-            border-color: ${colors[12]};
-            text-color:black;
-            color: ${colors[1]};
-        }
-        element-icon {
-            size: 96px;
-            cursor: inherit;
-        }
-        element-text {
-            horizontal-align: 0.5;
-            cursor: inherit;
-            color: ${colors[0]};
-        }
-EOF
-
-# HYPRLOCK THEME
-    mapfile -t colors < <(sed 's/^[^=]*=\s*//' "$PYWAL_COLORS_HYPRLAND")
-    cat <<EOF > "$HYPRLOCK_CONFIG" 
-        # ~/.config/hypr/hyprlock.conf
-
-        general {
-            disable_loading_bar = true
-            hide_cursor = true
-            grace = 0
-        }
-        background {
-            monitor =
-            path = $WALLPAPERS_DIR/$SELECTED_WALLPAPER
-            blur_passes = 3
-            blur_size = 6
-            noise = 0.045
-            contrast = 1.3000
-            brightness = 0.4650
-        }
-        input-field {
-            monitor =
-            size = 250, 50
-            outline_thickness = 3
-            dots_size = 0.35
-            dots_spacing = 0.25
-            dots_center = true
-            outer_color = ${colors[13]}
-            inner_color = ${colors[9]}
-            font_color = ${colors[10]}
-            fade_on_empty = false
-            placeholder_text = Enter Password
-            position = 0, -50  # Поднято выше
-            halign = center
-            valign = center
-        }
-        # Время
-        label {
-            monitor =
-            text = cmd[update:1000] date +'%H:%M'
-            position = 0, 180
-            halign = center
-            valign = center
-            color = ${colors[8]}
-            font_size = 64
-            font_family = SF Mono
-        }
-        # Дата
-        label {
-            monitor =
-            text = cmd[update:1000] date +'%A, %d %B'
-            position = 0, 100
-            halign = center
-            valign = center
-            color = ${colors[13]}
-            font_size = 20
-            font_family = SF Mono
-        }
-        # Информация о треке (скрывается при неактивном плеере)
-        label {
-            monitor =
-            text = cmd[update:1000] if playerctl status >/dev/null 2>&1; then playerctl metadata --format '{{artist}} - {{title}}'; else echo ""; fi
-            position = 0, -150
-            halign = center
-            valign = center
-            color = ${colors[7]}
-            font_size = 15
-            font_family = SF Mono
-        }
-EOF
-# HYPRMODE THEME
-    mapfile -t colors < "$PYWAL_COLORS" 
-    cat <<EOF > "$HYPRMODE_THEME_FILE" 
-* {
-    /* Основные настройки */
-        background-color: ${colors[13]}45;
-        border:0;
-    /* Размеры и отступы */
-        width: 20%;
-        padding: 10px;
-        margin: 0;
-        border-radius: 0.4 em;
-        spacing: 0;
-    /* Стиль списка */
-        listview: true;
-        lines: 5;
-        fixed-height: true; 
-    /* Убираем иконки */
-        show-icons: false;
-}
-#inputbar {
-    children: [prompt, entry];
-}
-#entry {
-    padding: 5px;
-    text-color: #CDD6F4;
-    border: 3;
-    background-color: #2c2c2ce7;
-    border-color: #dddddd;
-}
-#prompt {
-    padding: 5px;
-    text-color:${colors[15]};
-    background-color:#00000000;
-    border:0;
-}
-#listview {
-    padding: 5px;
-    dynamic: true;
-    scrollbar: false;
-    background-color:#00000000;
-}
-#element {
-    padding: 5px;
-    background-color: ${colors[2]};
-    border-color: ${colors[9]};
-    border: 0;
-    border: 4px ;
-    margin: 4px;
-}
-#element selected {
-    text-color: ${colors[0]};
-    background-color: ${colors[13]};
-    border-color: ${colors[11]};
-    border:4;
-}
-EOF
-
-# HYPRLAND COLORS
-    mapfile -t colors < "$PYWAL_COLORS"
-    cat <<EOF > "$HYPRLAND_COLORS"
-        ################
-        ###  Colors  ###
-        ################
-        $(for i in {1..16}; do 
-            color_index=$((i-1))
-            echo "\$color$i = 0xff${colors[$color_index]#\#}"
-        done)
-EOF
-
-#Конец Скрипта
-    hyprctl reload 
-    exit

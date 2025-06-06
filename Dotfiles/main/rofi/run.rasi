@@ -1,0 +1,11 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    lines: 2;
+    icon-theme: "Papirus";
+    font: "SF Mono 10";
+    icon-size: 12;
+    icon-spacing: 0;
+    terminal: "kitty";
+}
+@theme "~/.config/rofi/themes/rofi-run-theme.rasi"

@@ -1,5 +1,5 @@
 * {
-  background-color: rgba(15,15,15,25%);
+  background-color: rgb(20,20,20,20%);
   text-color:white;
   spacing: 0;
   width: 512px;
@@ -10,15 +10,15 @@ window {
   height:350px;
 }
 inputbar {
-  background-color:rgba(250,250,250,15%);
+  background-color: rgba(9, 10, 12, 0.35);
   border-radius: 1em;
   border:none;
   children: [prompt,entry];
   padding: 0px;
-  margin: 0.75em;
+  margin: 0.8em;
 }
 prompt {
-  text-color:yellow;
+  text-color: rgba(67, 96, 118, 1.0);
   padding: 14px;
   background-color: transparent;
 }
@@ -27,7 +27,7 @@ textbox {
   background-color: transparent;
 }
 entry {
-  text-color: green;
+  text-color: rgba(75, 115, 142, 1.0);
   padding: 16px;
   background-color: transparent;
 }
@@ -41,13 +41,12 @@ element {
   width: 20%;
   padding: 0.6em;
   background-color: transparent;
-  text-color:orange;
+  text-color: text;
 }
 element selected {
-  background-color: rgba(255,0,0,50%);
+  background-color: rgba(61, 104, 130, 0.35);
   border-radius: 14px;
-  border:none;
-  text-color: blue;
+  text-color: rgba(67, 96, 118, 1.0);
   margin: 8px;
 }
 element-text {
@@ -59,5 +58,5 @@ element-icon {
 }
 
 configuration {
-  click-to-exit: true;
+  click-to-exit: false;
 }
