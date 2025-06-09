@@ -9,6 +9,23 @@ mkdir -p "$THUMB_CACHE"
 
 # === Функции ===
 
+safe_kill() {
+    local proc_name="$1"
+    pkill -TERM "$proc_name"
+    local timeout=5  # максимум 5 секунд ждать завершения
+
+    while pgrep "$proc_name" >/dev/null && [ $timeout -gt 0 ]; do
+        sleep 0.2
+        timeout=$((timeout - 1))
+    done
+
+    if pgrep "$proc_name" >/dev/null; then
+        notify-send -t 3000 -u normal "Warning: $proc_name still running"
+        # Можно принудительно убить:
+        pkill -KILL "$proc_name"
+    fi
+}
+
 generate_rofi_data() {
     local data_file=$1
     cd "$WALLPAPERS_DIR" || exit 1
@@ -33,25 +50,25 @@ apply_wallpaper() {
     if [[ "$selected" == *.mp4 || "$selected" == *.MP4 ]]; then
         #notify-send "Applying Video Wallpaper:" "$selected"
         notify-send -t 5000 -u low -i dialog-information "Sucess Applying Wallpaper:" "$full_path"
-        pkill swww-daemon
-        pkill mpvpaper
+        safe_kill swww-daemon
+        safe_kill mpvpaper
+        pkill swww
         local output=$(hyprctl monitors | awk '/Monitor/ {print $2; exit}')
         mpvpaper -o "--loop --no-audio" "$output" "$full_path" &
         wal -i "$full_path" --backend Colorz
     else
        #notify-send "Applying Static Wallpaper:" "$selected"
         notify-send -t 5000 -u low -i dialog-information "Sucess Applying Wallpaper:" "$full_path"
-        pkill mpvpaper
-        pkill swww-daemon
+        safe_kill mpvpaper
+        safe_kill swww-daemon
         swww-daemon &
-        swww img "$full_path" --transition-type none
+        swww img "$full_path"
         wal -i "$full_path" --backend Wal
     fi
 
     generate_theme "rofi-dmenu" "$HOME/.config/rofi/themes/rofi-dmenu-theme.rasi"
     generate_theme "rofi-run" "$HOME/.config/rofi/themes/rofi-run-theme.rasi"
     generate_theme "hyprland-colors" "$HOME/.config/hypr/conf/colors.conf"
-
     hyprctl reload
 }
 
@@ -143,7 +160,23 @@ main() {
 
 # === Авто-применение последнего обоя ===
 auto_apply_last_wallpaper() {
-    [ -f "$HOME/.cache/last_wallpaper.txt" ] && apply_wallpaper "$(basename "$(cat "$HOME/.cache/last_wallpaper.txt")")"
+    if [ ! -f "$LAST_WALLPAPER_FILE" ]; then
+        echo "No last wallpaper found."
+        return
+    fi
+
+    if pgrep -x mpvpaper >/dev/null || pgrep -x swww >/dev/null || pgrep -x swww-daemon >/dev/null; then
+        echo "Wallpaper already running (mpvpaper or swww). Skipping restore."
+        return
+    fi
+
+    local last_wallpaper
+    last_wallpaper=$(cat "$LAST_WALLPAPER_FILE")
+    if [ -f "$last_wallpaper" ]; then
+        apply_wallpaper "$(basename "$last_wallpaper")"
+    else
+        notify-send -t 3000 -u normal -i dialog-warning "Warning" "Saved wallpaper not found: $last_wallpaper"
+    fi
 }
 
 # === Точка входа ===

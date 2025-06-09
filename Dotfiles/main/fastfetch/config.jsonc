@@ -1,0 +1,43 @@
+{
+  "logo": {
+    "type": "small",        // Logo type: auto, builtin, small, file, etc.
+    "source": "arch",      // Built-in logo name or file path
+    "width": 65,           // Width in characters (for image logos)
+    "height": 35,          // Height in characters (for image logos)
+    "padding": {
+        "top": 0,          // Top padding
+        "left": 0,         // Left padding
+        "right": 2         // Right padding
+      },
+    "color": {             // Override logo colors
+        "1": "blue",
+        "2": "green"
+      }
+  },
+  "display": {
+    "key": {
+      "width": 18,
+      "separator": " "
+    },
+    "separator": " ", // можно заменить на ⚡️ или убрать вовсе
+    "color": "white"
+  },
+  "modules": [
+    "title",
+    "separator",
+    { "type": "os",         "key": "󰌽  OS" },
+    { "type": "kernel",     "key": "  Kernel" },
+    { "type": "packages",   "key": "󰏖  Packages" },
+    { "type": "display",    "key": "󰍹  Display" },
+    { "type": "terminal",   "key": "  Terminal" },
+    { "type": "wm",         "key": "  WM" },
+    { "type": "de",         "key": "  DE" },
+    { "type": "cpu",        "key": "  CPU" },
+    { "type": "gpu",        "key": "󰍹  GPU" },
+   // { "type": "gpuDriver",  "key": "  GPU Driver" },
+    { "type": "memory",     "key": "󰍛  Memory" },
+    { "type": "osUptime",   "key": "󰔟  OS Age" },
+    { "type": "uptime",     "key": "  Uptime" },
+    { "type": "colors" }
+  ]
+}
