@@ -1,0 +1,19 @@
+[color]
+  gradient = 1
+  gradient_count = 3
+  foreground = '#FFFFFF'
+  gradient_color_1 = ' {{hex1}} '
+  gradient_color_2 = ' {{hex2}} '
+  gradient_color_3 = ' {{hex3}} '
+[general]
+  bars = 21
+  framerate = 59
+  autosens = 1
+  sensitivity = 80
+[input]
+  method = pulse
+  source = auto
+[output]
+  method = ncurses
+[smoothing]
+  integral = 25

@@ -1,0 +1,24 @@
+[color]
+  gradient = 1
+  gradient_count = 8
+  foreground = '{{hex[15]}}'
+  gradient_color_1 = '{{hex[1]}}'
+  gradient_color_2 = '{{hex[2]}}'
+  gradient_color_3 = '{{hex[3]}}'
+  gradient_color_4 = '{{hex[4]}}'
+  gradient_color_5 = '{{hex[5]}}'
+  gradient_color_6 = '{{hex[6]}}'
+  gradient_color_7 = '{{hex[7]}}'
+  gradient_color_8 = '{{hex[8]}}'
+[general]
+  bars = 16
+  framerate = 59
+  autosens = 1
+  sensitivity = 80
+[input]
+  method = pulse
+  source = auto
+[output]
+  method = ncurses
+[smoothing]
+  integral = 25

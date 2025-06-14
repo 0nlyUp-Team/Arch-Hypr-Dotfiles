@@ -1,8 +1,9 @@
 @import url('../../.cache/wal/colors-waybar.css');
-* {min-height:0;font-family:"Symbols Nerd Font, SF Mono";}
+* {min-height:0;font-family:"SF Pro Display, Symbols Nerd Font";}
 window#waybar {
-    background-color:alpha(@color0,0.53);
+    background-color:alpha(@color0,0.4);
     border-radius:8.5px;
+    box-shadow:inset 0 0 0 1px alpha(@foreground,0.35);
     text-shadow:inherit; /* FIX FUCKING gtk.css TEXT BUG */
 }
 /* Workspace Buttons*/
@@ -10,7 +11,7 @@ window#waybar {
     color:@foreground;
     text-shadow:inherit; /* FIX FUCKING gtk.css TEXT BUG */
     outline:inherit;border:inherit;background:inherit;
-    box-shadow:inset 0 0 4px transparent;
+    /*box-shadow:inset 0 0 4px transparent;*/
     transition:all 0.4s ease;
     font-size:14px;
     font-weight:normal;
@@ -20,7 +21,7 @@ window#waybar {
     color:@color2;
     /* background: alpha(@color2, 0.5); */
     border: none;
-    box-shadow:inset 0 0 4px @color2;
+    /* box-shadow:inset 0 0 4px @color2; */
     outline: none;
     border-radius: 8px;
 }
@@ -28,12 +29,12 @@ window#waybar {
 #workspaces button.active {
     color: @color2;
     border: none;
-    box-shadow:inset 0 0 6.5px @color2;
+    /* box-shadow:inset 0 0 6.5px @color2; */
     border-radius: 8px;
     font-weight: normal; /* Для консистентности */
 }
 
-#custom-logo{
+#custom-functional-logo{
     font-size:21px;color:@color6;
     padding:0px 2px 0px 12px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
@@ -75,6 +76,12 @@ window#waybar {
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
+#custom-hyprlock{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
 #tray{
     font-size:14px;color:@foreground;
     padding:0px 6px 0px 6px;
@@ -106,8 +113,10 @@ window#waybar {
 }
 
 #custom-music{
-    font-size:16px;color:@foreground;
-    padding:0px 6px 0px 6px;
+    font-family:"SF Mono";
+    font-size:21px;color:@foreground;
+    padding:0px 14px 0px 14px;
+    margin: 12px 0px 0px 32px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
@@ -118,7 +127,7 @@ window#waybar {
 
 #custom-separator{color:@foreground;font-size:21px;border:none;outline:none;}
 
-#custom-logo:hover,
+#custom-functional-logo:hover,
 #custom-weather:hover,
 #cpu:hover,
 #temperature:hover,
@@ -134,7 +143,7 @@ window#waybar {
     color:@color3;
 }
 #group-media{padding:4px;transition:all 0.3s ease-in-out;} 
-#custom-media-group-icon{font-size:21;color:@color2;padding:0px 12px 0 12px;}#custom-media-group-icon:hover{color:@color4;}
+
 #drawer-child { transition: all 0.3s ease-in-out;}
 #group-media:hover, #custom-test,#custom-playerctl {
     opacity: 1;
@@ -153,3 +162,17 @@ window#waybar {
 #custom-playerctl-play:hover,#custom-playerctl-prev:hover,#custom-playerctl-next:hover{
         color:@color14;
 }
+
+#custom-icon-group-media,
+#custom-icon-group-system,
+#custom-icon-group-misc,
+#custom-icon-group-audio,
+#custom-icon-group-work
+{font-size:21px;color:@color2;padding:0px 12px 0 12px;}
+
+#custom-icon-group-media:hover,
+#custom-icon-group-system:hover,
+#custom-icon-group-misc:hover, 
+#custom-icon-group-audio:hover,
+#custom-icon-group-work:hover
+{color:@color13;}

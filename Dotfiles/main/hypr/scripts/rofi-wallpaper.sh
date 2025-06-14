@@ -66,86 +66,12 @@ apply_wallpaper() {
         wal -i "$full_path" --backend Wal
     fi
 
-    generate_theme "rofi-dmenu" "$HOME/.config/rofi/themes/rofi-dmenu-theme.rasi"
-    generate_theme "rofi-run" "$HOME/.config/rofi/themes/rofi-run-theme.rasi"
-    generate_theme "hyprland-colors" "$HOME/.config/hypr/conf/colors.conf"
+    # Apply Color Themes
+    "$HOME/.config/walgen/walgen.sh" "cava" "$HOME/.config/cava/config"
+    "$HOME/.config/walgen/walgen.sh" "rofi-dmenu" "$HOME/.config/rofi/themes/rofi-dmenu-theme.rasi"
+    "$HOME/.config/walgen/walgen.sh" "rofi-run" "$HOME/.config/rofi/themes/rofi-run-theme.rasi"
+    "$HOME/.config/walgen/walgen.sh" "hyprland-colors" "$HOME/.config/hypr/conf/colors.conf"
     hyprctl reload
-}
-
-generate_theme() {
-    local template_name="$1"
-    local output_file="$2"
-    local template_path="$HOME/.config/walgen/templates/${template_name}.txt"
-
-    if [ ! -f "$HOME/.cache/wal/colors" ]; then
-        notify-send -t 5000 -u critical -i dialog-error "Error (Caused by rofi-wallpaper.sh)" "File Not Found: $HOME/.cache/wal/colors"
-        return 1
-    fi
-
-    if [ ! -f "$template_path" ]; then
-        notify-send -t 5000 -u critical -i dialog-error "Error (Caused by rofi-wallpaper.sh)" "Template Not Found: $template_path"
-        return 1
-    fi
-
-    mkdir -p "$(dirname "$output_file")"
-
-    local -a colors
-    mapfile -t colors < "$HOME/.cache/wal/colors"
-
-    local -A template_vars=(
-        ["background"]="${colors[0]}"
-        ["foreground"]="${colors[7]}"
-        ["accent"]="${colors[3]}"
-        ["text"]="${colors[15]}"
-        ["black"]="${colors[0]}"
-        ["white"]="${colors[15]}"
-    )
-
-    for i in {0..15}; do
-        hex="${colors[$i]#"#"}"
-        r=$((16#${hex:0:2}))
-        g=$((16#${hex:2:2}))
-        b=$((16#${hex:4:2}))
-        template_vars["color$i"]="${colors[$i]}"
-        template_vars["rgba_color$i"]="rgba($r, $g, $b, 1.0)"
-    done
-
-    local content
-    content=$(<"$template_path")
-
-    # Подстановка обычных переменных
-    for key in "${!template_vars[@]}"; do
-        content=${content//"{{$key}}"/"${template_vars[$key]}"}
-    done
-
-    # Обработка {{rgba_colorX,A}}
-    if grep -q '{{rgba_color[0-9]\{1,2\},[0-9.]\+}}' <<< "$content"; then
-        matches=$(grep -oP '{{rgba_color[0-9]{1,2},[0-9.]+}}' <<< "$content" | sort -u)
-        for match in $matches; do
-            index=$(echo "$match" | grep -oP 'rgba_color\K[0-9]+')
-            alpha=$(echo "$match" | grep -oP ',\K[0-9.]+')
-            hex="${colors[$index]#"#"}"
-            r=$((16#${hex:0:2}))
-            g=$((16#${hex:2:2}))
-            b=$((16#${hex:4:2}))
-            rgba="rgba($r, $g, $b, $alpha)"
-            content="${content//$match/$rgba}"
-        done
-    fi
-
-    if [[ "$template_name" == "hyprland-colors" ]]; then
-        [[ -f "$HOME/.cache/wal/colors" ]] || { notify-send -u critical "Missing" "$HOME/.cache/wal/colors"; return 1; }
-        mapfile -t colors < "$HOME/.cache/wal/colors"
-        > "$HOME/.config/hypr/conf/colors.conf"
-        for i in {0..15}; do
-            printf "\$color%d = 0xff%s\n" $((i+1)) "${colors[$i]#\#}" >> "$HOME/.config/hypr/conf/colors.conf"
-        done
-        notify-send -t 5000 -u normal -i dialog-warning "Debug (Caused by rofi-wallpaper.sh)" "Hyprland Colors Generated: $HOME/.config/hypr/conf/colors.conf"
-        return 0
-    fi
-
-    echo "$content" > "$output_file"
-    notify-send -t 3000 -u low -i dialog-information "Theme Generated" "$output_file"
 }
 
 # === Главная функция ===

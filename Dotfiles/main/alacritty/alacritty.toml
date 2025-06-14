@@ -12,5 +12,5 @@
 	opacity = 0.7
 [font]
 	glyph_offset = { x = 0, y = 0 }
-	normal = { family = "SF-Pro", style = "Regular" }
+	normal = { family = "SF Mono", style = "Regular" }
 	size = 7.5

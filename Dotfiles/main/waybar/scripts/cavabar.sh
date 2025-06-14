@@ -4,7 +4,7 @@
 trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM
 
 BARS=8;
-FRAMERATE=19;
+FRAMERATE=44;
 EQUILIZER=1;
 
 # Get script options
@@ -75,7 +75,7 @@ bars = $BARS
 method = raw
 raw_target = $cava_waybar_pipe
 data_format = ascii
-ascii_max_range = 7
+ascii_max_range = 4
 " > $cava_waybar_config
 
 # Clean pipe for playerctl

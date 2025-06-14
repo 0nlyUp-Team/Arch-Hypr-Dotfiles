@@ -38,6 +38,7 @@
     { "type": "memory",     "key": "󰍛  Memory" },
     { "type": "osUptime",   "key": "󰔟  OS Age" },
     { "type": "uptime",     "key": "  Uptime" },
+    { "type": "LocalIp",     "key": "  Uptime" },
     { "type": "colors" }
   ]
 }

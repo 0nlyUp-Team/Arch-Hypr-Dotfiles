@@ -1,5 +1,5 @@
 * {
-  background-color: rgb(20,20,20,20%);
+  background-color: rgba(10,10,18,0.15) /*rgb(10,10,18,0.18)*/;
   text-color:white;
   spacing: 0;
   width: 512px;
@@ -10,7 +10,7 @@ window {
   height:350px;
 }
 inputbar {
-  background-color: rgba(9, 10, 12, 0.35);
+  background-color: rgba(144,118,133,0.2);
   border-radius: 1em;
   border:none;
   children: [prompt,entry];
@@ -18,7 +18,7 @@ inputbar {
   margin: 0.8em;
 }
 prompt {
-  text-color: rgba(67, 96, 118, 1.0);
+  text-color: rgba(112,116,137,1.0);
   padding: 14px;
   background-color: transparent;
 }
@@ -27,7 +27,7 @@ textbox {
   background-color: transparent;
 }
 entry {
-  text-color: rgba(75, 115, 142, 1.0);
+  text-color: rgba(144,118,133,0.4);
   padding: 16px;
   background-color: transparent;
 }
@@ -44,9 +44,9 @@ element {
   text-color: text;
 }
 element selected {
-  background-color: rgba(61, 104, 130, 0.35);
+  background-color: rgba(83,86,105,0.2);
   border-radius: 14px;
-  text-color: rgba(67, 96, 118, 1.0);
+  text-color: rgba(97,101,120,1.0);
   margin: 8px;
 }
 element-text {

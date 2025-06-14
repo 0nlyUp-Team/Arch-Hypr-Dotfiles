@@ -1,47 +1,85 @@
 {   
     "reload_style_on_change": true,
     "exclusive": true,
-    "layer": "bottom",
+    "layer": "top",
     "position": "top",
     "width": 1,
     "height": 40,
-    "margin-top":16,
-    "margin-bottom":10,
-    "margin-left":10,
-    "margin-right":10,
+    "margin-top":15,
+    "margin-bottom":5,
+    "margin-left":15,
+    "margin-right":15,
     "spacing":4,
-    "modules-left": [ 
-        "group/sysinfo",
-        "custom/separator",
-        "custom/weather",
-        "battery",
+"modules-left": [ 
+    "group/system",
+    "custom/separator",
+    "group/misc",
+    "custom/separator",
+    "group/media",
+    "custom/separator",
+    "group/audio"
     ],
 "modules-center": [
-        "hyprland/workspaces"
+    "group/work",
     ],
 "modules-right": [
-        "custom/music",
-        "hyprland/language",
-        "clock",
-        "tray",
-        "custom/swaync",
-        "custom/separator",
-        "group/media"
+    "clock",
+    "custom/separator"
     ],
-"group/sysinfo": {
+"group/system": {
+    "orientation": "inherit",
+    "drawer": { 
+        "transition-duration": 850,
+        "transition-left-to-right": true,
+        "click-to-reveal":true 
+    },
+    "modules": [
+        "custom/icon-group-system",
+        "custom/hyprlock",
+        "cpu",
+        "network"
+    ]
+  },
+"group/work": {
     "orientation": "inherit",
     "drawer": { 
         "transition-duration": 850,
         "transition-left-to-right": false,
+        "click-to-reveal":false 
+    },
+    "modules": [
+        "custom/icon-group-work",
+        "hyprland/workspaces"
+    ]
+  },  
+"group/misc": {
+    "orientation": "inherit",
+    "drawer": { 
+        "transition-duration": 850,
+        "transition-left-to-right": true,
         "click-to-reveal":true 
     },
     "modules": [
-        "custom/media-group-icon",
-        "custom/logo",
-        "network",
-        "cpu",
-        "temperature",
-        "memory"
+        "custom/icon-group-misc",
+        "custom/toggle_blur"
+    ]
+  },
+"group/audio": {
+    "orientation": "inherit",
+    "drawer": { 
+        "transition-duration": 850,
+        "transition-left-to-right": true,
+        "click-to-reveal":true 
+    },
+    "modules": [
+        "custom/icon-group-audio",
+        "pulseaudio",
+        "custom/microphone",
+        "custom/playerctl-prev",
+        "custom/playerctl-play",
+        "custom/playerctl-next",
+        "custom/music",
+        "custom/playerlabel",
     ]
   },
 "group/media": {
@@ -52,38 +90,49 @@
         "click-to-reveal":true 
     },
     "modules": [    
-        "custom/media-group-icon",
-        "custom/media-group-icon",
-        "custom/microphone",
-        "pulseaudio",
-        "custom/playerctl-prev",
-        "custom/playerctl-play",
-        "custom/playerctl-next",
-
+        "custom/icon-group-media",
+        "custom/icon-group-media",
+        "custom/icon-group-media"
     ]
   },
-"custom/media-group-icon":{
-        "format": "",
-        "tooltip": false,
+"custom/icon-group-misc":{
+        "format": "",
+        "tooltip": false
     },
+"custom/icon-group-media":{
+        "format": "media_icon ",
+        "tooltip": false
+    },
+"custom/icon-group-system":{
+        "format": "",
+        "tooltip": false
+    },
+"custom/icon-group-audio":{
+        "format": "",
+        "tooltip": false
+    },
+"custom/icon-group-work":{
+        "format": "",
+        "tooltip": false
+    },   
 "clock": {
         "format": "{:%H:%M}  ",
         "format-alt": "{:%A, %B %d, %Y (%R)}  ",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
-                    "mode"          : "year",
-                    "mode-mon-col"  : 3,
-                    "weeks-pos"     : "right",
-                    "on-scroll"     : 1,
-                    "on-click-right": "mode",
-                    "format": {
-                              "months":     "<span color='#ffead3'><b>{}</b></span>",
-                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
-                              }
-                    }
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "on-click-right": "mode",
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        }
     },
 "hyprland/language": {
         "format": "{}",
@@ -94,17 +143,19 @@
         "format": "|",
         "tooltip": false,
     },
-"custom/test": {
-        "format": "onlyup!",
-        "tooltip": false,
-    },
-"custom/logo": {
+"custom/functional-logo": {
         "format": "",
         "tooltip": false,
-        "on-click": "hyprlock",
         "on-click-middle": "kitty -e btop",
-        "on-click-right": "sh ~/.config/hypr/scripts/rofi-waybar-theme.sh"
+        "on-click-right": "hyprlock"//"sh ~/.config/hypr/scripts/rofi-waybar-theme.sh"
     },
+"custom/hyprlock": {
+        "format": "",
+        "tooltip": false,
+        "on-click-right": "$HOME/.config/hypr/scripts/hyprlock.shock",
+        "on-click": "$HOME/.config/hypr/scripts/hyprlock.sh",
+        "on-click-middle": "$HOME/.config/hypr/scripts/hyprlock.sh"
+},
 "custom/toggle_blur": {
         "format": "{}",
         "exec": "hyprctl getoption decoration:blur:enabled | grep -q 'int: 1' && echo '󰂷' || echo '󰂵'",
@@ -182,44 +233,48 @@
     "on-click": "activate",
     "all-workspaces": false,
         "format-icons": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "6": "6",
-            "7": "7",
-            "8": "8",
-            "9": "9",
-            "10": "10",
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十",
             "gaming" : "󰊗",
-            "browser" : "",
+            "browser" : "",
             "telegram" : "",
             "discord": "",
             "vscode": "󰨞",
+            "nvim": "",
             "filemanager":""
         }
     },
 "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-icons": [
-            "",
-            "",
-            ""
-        ],
-        "on-click": "pavucontrol"
-    },
+  "format": "{icon} {volume}%",
+  "format-muted": "󰝟 {volume}%", 
+  "format-icons": {
+    "default": ["󰕿","󰖀","󰕾"],  
+    "default-muted": "󰝟"                  
+  },
+  "on-click": "pavucontrol",
+  "on-click-right": "pavucontrol",
+  "on-click-middle": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+},
+
 "network": {
-        "format-wifi": "{essid}|({signalStrength}%)󰅢[{bandwidthDownBits}]󰅧[{bandwidthUpBits}]",
-        "format-ethernet": "󰌗{ifname}|[{bandwidthDownBits}][{bandwidthUpBits}]",
+        "format-wifi": " {essid},({signalStrength}%),󰅢 {bandwidthDownBits},󰅧 {bandwidthUpBits}",
+        "format-ethernet": "󰌗 {ifname}  [{bandwidthDownBits}]  [{bandwidthUpBits}]",
         "format-disconnected": " Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
         "on-click": "nm-connection-editor",
-        "interval": 6
+        "interval": 8
     },
 "cpu": {
         "format":" {usage}%",
-        "interval": 6
+        "interval": 8
     },
 "temperature": {
     "format": "{temperatureC}°",
@@ -229,42 +284,28 @@
     },
 "memory": {
         "format": " {used:0.1f}G/{total:0.1f}G",
-        "interval": 6
+        "interval": 8
     },
 "battery": {
-    "interval": 3,
+    "interval": 8,
     "bat": "BAT1",
+    "adapter": "ACAD",
     "format": "{icon} {capacity}%",
-    "format-charging": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰚥 {capacity}%",
+    "format-full": "󰁹 {capacity}%",
     "format-icons": [
-        "󰂎", // 0-10%
-        "󰁺", // 10-20%
-        "󰁻", // 20-30%
-        "󰁼", // 30-40%
-        "󰁽", // 40-50%
-        "󰁾", // 50-60%
-        "󰁿", // 60-70%
-        "󰂀", // 70-80%
-        "󰂁", // 80-90%
-        "󰂂", // 90-100%
-        "󰁹"  // 100%
+        "󰂎", "󰁺", "󰁻", "󰁼", "󰁽",
+        "󰁾", "󰁿", "󰂀", "󰂁", "󰂂"
     ],
-    "format-charging-icons": [
-        "󰢟", // 0-10% заряжается
-        "󰢜", // 10-20%
-        "󰂆", // 20-30%
-        "󰂇", // 30-40%
-        "󰂈", // 40-50%
-        "󰢝", // 50-60%
-        "󰂉", // 60-70%
-        "󰢞", // 70-80%
-        "󰂊", // 80-90%
-        "󰂋", // 90-100%
-        "󰂅"  // 100%
-    ],
-    "critical-threshold": 10,
-    "tooltip": true
+    "states": {
+        "warning": 30,
+        "critical": 15
     },
+    "critical-threshold": 10,
+    "tooltip": true,
+    "tooltip-format": "{timeTo}, {capacity}%, {power}W"
+},
 "tray": {
         "icon-size": 21,
         "spacing": 2

@@ -1,0 +1,15 @@
+{
+    "default": {
+        "blur": true,
+        "size": 8,
+        "passes": 2
+    },
+    "kitty": {
+        "blur": true,
+        "size": 12,
+        "passes": 3
+    },
+    "firefox": {
+        "blur": false
+    }
+}

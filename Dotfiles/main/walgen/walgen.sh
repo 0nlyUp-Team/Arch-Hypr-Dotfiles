@@ -4,49 +4,43 @@ TEMPLATES_DIR="$HOME/.config/walgen/templates"
 PYWAL_COLORS="$HOME/.cache/wal/colors"
 
 generate_theme() {
-    local template_name="$1"
-    local output_file="$2"
-    
-    if [ ! -f "$PYWAL_COLORS" ]; then
-	notify-send -t 5000 -u critical -i dialog-error "Error:" "File Not Found: $PYWAL_COLORS"
-        return 1
-    fi
+    local tpl_name="$1"
+    local out_file="$2"
+    local tpl="${TEMPLATES_DIR}/${tpl_name}.txt"
 
-    local template_path="${TEMPLATES_DIR}/${template_name}.txt"
-    if [ ! -f "$template_path" ]; then
-	notify-send -t 5000 -u critical -i dialog-error "Error:" "Template Not Found in: $TEMPLATES_DIR"
-        return 1
-    fi
+    [[ -f "$PYWAL_COLORS" ]] || { echo "No colors file"; return 1; }
+    [[ -f "$tpl"        ]] || { echo "No template";    return 1; }
+    mkdir -p "$(dirname "$out_file")"
 
-    mkdir -p "$(dirname "$output_file")"
-
-    local -a colors
+    # считываем 16 hex-цветов
     mapfile -t colors < "$PYWAL_COLORS"
 
-    local -A template_vars=(
-        ["background"]="${colors[0]}"
-        ["foreground"]="${colors[7]}"
-        ["accent"]="${colors[3]}"
-        ["text"]="${colors[15]}"
-        ["black"]="${colors[0]}"
-        ["white"]="${colors[15]}"
-    )
+    # собираем sed-скрипт
+    local sed_script=()
+    local i hex r g b
 
     for i in {0..15}; do
-        template_vars["color$i"]="${colors[$i]}"
+        hex="${colors[$i]}"                   # "#RRGGBB"
+        hex_esc="${hex//\//\\/}"              # экранируем /
+        # 1) {{hex[i]}}
+        sed_script+=( -e "s/\{\{\s*hex\[\s*${i}\s*\]\s*\}\}/${hex_esc}/g" )
+
+        # готовим rgb
+        h="${hex#"#"}"
+        r=$((16#${h:0:2})); g=$((16#${h:2:2})); b=$((16#${h:4:2}))
+        # 2) {{rgb[i]}}
+        sed_script+=( -e "s/\{\{\s*rgb\[\s*${i}\s*\]\s*\}\}/${r},${g},${b}/g" )
+
+        # 3) {{rgba[i][Float]}}  — захватываем Float
+        #    в replacement подставляем \1
+        sed_script+=( -e "s/\{\{\s*rgba\[\s*${i}\s*\]\[\s*([0-9.]+)\s*\]\s*\}\}/rgba(${r},${g},${b},\1)/g" )
     done
 
-    local content
-    content=$(<"$template_path")
-
-    for key in "${!template_vars[@]}"; do
-        content=${content//"{{$key}}"/"${template_vars[$key]}"}
-    done
-
-    echo "$content" > "$output_file"
-    notify-send -t 5000 -u low -i dialog-information "Sucess:" "Theme Generated: $output_file"
+    # выполняем замену одним sed
+    sed -E "${sed_script[@]}" "$tpl" > "$out_file"
 }
 
-# Пример использования:
-generate_theme "rofi" "$HOME/.config/rofi/themes/my-theme.rasi"
-generate_theme "hyprland" "$HOME/.config/hypr/colors.conf"
+if [[ $1 && $2 ]]; then
+    generate_theme "$1" "$2"
+fi
+
