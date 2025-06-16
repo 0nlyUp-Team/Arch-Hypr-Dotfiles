@@ -1,20 +1,40 @@
 #Алиасы:
+	alias untar='tar -xvf'
+	editbashrc(){
+		echo "Starting Editing ~/.bashrc via nvim!"
+		nvim "$HOME/.bashrc"
+		source "$HOME/.bashrc"
+	}
+	# DWM Aliases
+		alias dwmnitrogen='nitrogen ~/Wallpapers'
+		alias dwmedit='cd .github/dwm-arch-setup/dwm-6.5; sudo vim config.h'
+		alias dwmcompile='cd .github/dwm-arch-setup/dwm-6.5;sh compile.sh'
+		alias dwmstart='startx ~/.xinitrc dwm'
+
+	alias git_revert='git revert HEAD'
 	alias git_push='git push origin main'
 	git_commit() {
  	    git add .
   	    git commit -m "$*"
     	}
-	alias randomfetch='sh .config/hypr/scripts/fastfetch.sh'
+	alias service_log='sudo journalctl -xeu'
+	alias ff='clear;fastfetch -c $HOME/.config/fastfetch/config.jsonc'
+  alias conf='cd ~/.config;clear;ls'
+  alias randomfetch='sh .config/hypr/scripts/fastfetch.sh'
 	# Yay
 		alias ysearch='yay -Ss'
-		alias yclear='yay -Scc --noconfirm'		
+		alias yclear='yay -Scc --noconfirm'
 		alias yremove='yay -Rns --noconfirm'
-		alias yinstall='yay -Sy --needed --noconfirm'
+		alias yinstall='yay -S --needed --noconfirm'
+		alias ysync='yay -Sy --noconfirm'
+		alias yreinstall='yay -S --noconfirm'
 	# Pacman
 		alias psearch='sudo pacman -Ss'
 	 	alias pclear='sudo pacman -Scc --noconfirm'
 		alias premove='sudo pacman -Rns --noconfirm'
-		alias pinstall='sudo pacman -Sy --needed --noconfirm'
+		alias psync='sudo pacman -Sy --noconfirm'
+		alias pinstall='sudo pacman -S --needed --noconfirm'
+		alias preinstall='sudo pacman -S --noconfirm'
 		alias update='sudo pacman -Syu --noconfirm'
 	alias helper='echo -e "\
 # Pacman Helper Aliases\n\
@@ -45,7 +65,7 @@ export OSH='/home/unner/.oh-my-bash'
 # it'll load a random theme each time that oh-my-bash is loaded.
 #OSH_THEME="font"
 #OSH_THEME="random"
-OSH_THEME="edsonarios"
+OSH_THEME="lambda"
 #OSH_THEME="unner"
 # If you set OSH_THEME to "random", you can ignore themes you don't like.
 # OMB_THEME_RANDOM_IGNORED=("powerbash10k" "wanelo")
@@ -185,3 +205,5 @@ source "$OSH"/oh-my-bash.sh
 
 # Created by `pipx` on 2025-04-04 11:56:55
 export PATH="$PATH:/home/unner/.local/bin"
+
+export PATH=$PATH:/home/unner/.spicetify

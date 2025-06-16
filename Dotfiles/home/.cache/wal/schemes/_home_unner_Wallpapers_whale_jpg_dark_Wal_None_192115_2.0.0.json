@@ -1,0 +1,28 @@
+{
+    "checksum": "82437e1861100cc21d9c279ff27dc8bc",
+    "wallpaper": "/home/unner/Wallpapers/whale.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#11121a",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#11121a",
+        "color1": "#717388",
+        "color2": "#867C90",
+        "color3": "#7E8092",
+        "color4": "#A08E9F",
+        "color5": "#F1AB9B",
+        "color6": "#E19FA7",
+        "color7": "#c3c3c5",
+        "color8": "#5c5c71",
+        "color9": "#717388",
+        "color10": "#867C90",
+        "color11": "#7E8092",
+        "color12": "#A08E9F",
+        "color13": "#F1AB9B",
+        "color14": "#E19FA7",
+        "color15": "#c3c3c5"
+    }
+}

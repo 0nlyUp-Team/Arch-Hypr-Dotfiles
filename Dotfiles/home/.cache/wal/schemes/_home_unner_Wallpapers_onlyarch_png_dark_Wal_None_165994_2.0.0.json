@@ -1,0 +1,28 @@
+{
+    "checksum": "3b415a79ec89f9109c06fbc7f0e5030e",
+    "wallpaper": "/home/unner/Wallpapers/onlyarch.png",
+    "alpha": "100",
+    "special": {
+        "background": "#050608",
+        "foreground": "#c0c0c1",
+        "cursor": "#c0c0c1"
+    },
+    "colors": {
+        "color0": "#050608",
+        "color1": "#47A1C7",
+        "color2": "#4EBAE7",
+        "color3": "#6EC6EB",
+        "color4": "#A2A3A4",
+        "color5": "#BFBFC0",
+        "color6": "#A1D9F2",
+        "color7": "#c0c0c1",
+        "color8": "#535c66",
+        "color9": "#47A1C7",
+        "color10": "#4EBAE7",
+        "color11": "#6EC6EB",
+        "color12": "#A2A3A4",
+        "color13": "#BFBFC0",
+        "color14": "#A1D9F2",
+        "color15": "#c0c0c1"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "checksum": "5d7085e3eda34cbb3967030c497021ca",
+    "wallpaper": "/home/unner/Wallpapers/rocket-launch.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#23242e",
+        "foreground": "#c8c8ca",
+        "cursor": "#c8c8ca"
+    },
+    "colors": {
+        "color0": "#23242e",
+        "color1": "#D0A3B8",
+        "color2": "#989FC0",
+        "color3": "#9CA6C9",
+        "color4": "#ADB4D7",
+        "color5": "#AFBEE0",
+        "color6": "#B9C3DE",
+        "color7": "#c8c8ca",
+        "color8": "#67677f",
+        "color9": "#D0A3B8",
+        "color10": "#989FC0",
+        "color11": "#9CA6C9",
+        "color12": "#ADB4D7",
+        "color13": "#AFBEE0",
+        "color14": "#B9C3DE",
+        "color15": "#c8c8ca"
+    }
+}

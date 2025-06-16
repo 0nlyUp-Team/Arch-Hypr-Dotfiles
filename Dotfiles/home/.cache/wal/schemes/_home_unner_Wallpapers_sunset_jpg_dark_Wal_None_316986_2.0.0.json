@@ -1,0 +1,28 @@
+{
+    "checksum": "a1bf7d9a26539854afc8c7283a4e50aa",
+    "wallpaper": "/home/unner/Wallpapers/sunset.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0e0f16",
+        "foreground": "#c2c3c4",
+        "cursor": "#c2c3c4"
+    },
+    "colors": {
+        "color0": "#0e0f16",
+        "color1": "#5D6276",
+        "color2": "#64677C",
+        "color3": "#717387",
+        "color4": "#867C91",
+        "color5": "#7D849B",
+        "color6": "#9B8EA2",
+        "color7": "#c2c3c4",
+        "color8": "#5a5e6e",
+        "color9": "#5D6276",
+        "color10": "#64677C",
+        "color11": "#717387",
+        "color12": "#867C91",
+        "color13": "#7D849B",
+        "color14": "#9B8EA2",
+        "color15": "#c2c3c4"
+    }
+}

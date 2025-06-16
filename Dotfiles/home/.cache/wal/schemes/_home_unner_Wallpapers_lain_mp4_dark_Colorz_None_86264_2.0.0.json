@@ -1,0 +1,28 @@
+{
+    "checksum": "92b2c80258d18e72e7631e446b03bcd3",
+    "wallpaper": "/home/unner/Wallpapers/lain.mp4",
+    "alpha": "100",
+    "special": {
+        "background": "#0C0B17",
+        "foreground": "#c2c2c5",
+        "cursor": "#c2c2c5"
+    },
+    "colors": {
+        "color0": "#0C0B17",
+        "color1": "#5E576C",
+        "color2": "#726D89",
+        "color3": "#877187",
+        "color4": "#948EB3",
+        "color5": "#9D98B1",
+        "color6": "#B1ACCC",
+        "color7": "#c2c2c5",
+        "color8": "#5c596e",
+        "color9": "#5E576C",
+        "color10": "#726D89",
+        "color11": "#877187",
+        "color12": "#948EB3",
+        "color13": "#9D98B1",
+        "color14": "#B1ACCC",
+        "color15": "#c2c2c5"
+    }
+}

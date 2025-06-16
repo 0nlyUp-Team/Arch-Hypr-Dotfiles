@@ -1,0 +1,28 @@
+{
+    "checksum": "77241ef6994fa1c4ead4143e5244bc22",
+    "wallpaper": "/home/unner/Wallpapers/makima-devil-chainsaw-man-2560x1080-15442.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0e0a06",
+        "foreground": "#c2c1c0",
+        "cursor": "#c2c1c0"
+    },
+    "colors": {
+        "color0": "#0e0a06",
+        "color1": "#9A5438",
+        "color2": "#966B55",
+        "color3": "#7D807B",
+        "color4": "#938977",
+        "color5": "#D48F6B",
+        "color6": "#AAA493",
+        "color7": "#c2c1c0",
+        "color8": "#695d55",
+        "color9": "#9A5438",
+        "color10": "#966B55",
+        "color11": "#7D807B",
+        "color12": "#938977",
+        "color13": "#D48F6B",
+        "color14": "#AAA493",
+        "color15": "#c2c1c0"
+    }
+}

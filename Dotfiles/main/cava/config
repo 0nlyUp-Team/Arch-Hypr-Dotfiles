@@ -2,12 +2,12 @@
   gradient = 1
   gradient_count = 8
   foreground = '#c1c1c3'
-  gradient_color_1 = '#535669'
-  gradient_color_2 = '#616578'
-  gradient_color_3 = '#707489'
-  gradient_color_4 = '#907685'
-  gradient_color_5 = '#7D8399'
-  gradient_color_6 = '#9191A9'
+  gradient_color_1 = '#525569'
+  gradient_color_2 = '#61647A'
+  gradient_color_3 = '#6F738A'
+  gradient_color_4 = '#7B7DA1'
+  gradient_color_5 = '#7E819B'
+  gradient_color_6 = '#8F8EAC'
   gradient_color_7 = '#c1c1c3'
   gradient_color_8 = '#57576b'
 [general]

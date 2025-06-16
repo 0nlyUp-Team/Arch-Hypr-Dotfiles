@@ -1,0 +1,28 @@
+{
+    "checksum": "9debc67d84463b2e08df56768001ec7d",
+    "wallpaper": "/home/unner/Wallpapers/abstract-swirls.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0c12",
+        "foreground": "#c2c2c3",
+        "cursor": "#c2c2c3"
+    },
+    "colors": {
+        "color0": "#0c0c12",
+        "color1": "#525569",
+        "color2": "#636478",
+        "color3": "#88717A",
+        "color4": "#6E738A",
+        "color5": "#907892",
+        "color6": "#798AA2",
+        "color7": "#c2c2c3",
+        "color8": "#58586c",
+        "color9": "#525569",
+        "color10": "#636478",
+        "color11": "#88717A",
+        "color12": "#6E738A",
+        "color13": "#907892",
+        "color14": "#798AA2",
+        "color15": "#c2c2c3"
+    }
+}

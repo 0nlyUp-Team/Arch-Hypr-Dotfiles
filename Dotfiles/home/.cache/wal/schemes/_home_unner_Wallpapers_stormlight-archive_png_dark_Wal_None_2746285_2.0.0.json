@@ -1,0 +1,28 @@
+{
+    "checksum": "e7a8f67cc3db19b81db25947b517e91e",
+    "wallpaper": "/home/unner/Wallpapers/stormlight-archive.png",
+    "alpha": "100",
+    "special": {
+        "background": "#11111a",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#11111a",
+        "color1": "#7F8091",
+        "color2": "#A09BA4",
+        "color3": "#C6BABB",
+        "color4": "#DDC5BE",
+        "color5": "#E0C7BF",
+        "color6": "#DACFCC",
+        "color7": "#c3c3c5",
+        "color8": "#5c5c71",
+        "color9": "#7F8091",
+        "color10": "#A09BA4",
+        "color11": "#C6BABB",
+        "color12": "#DDC5BE",
+        "color13": "#E0C7BF",
+        "color14": "#DACFCC",
+        "color15": "#c3c3c5"
+    }
+}

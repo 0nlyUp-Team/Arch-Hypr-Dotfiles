@@ -1,0 +1,28 @@
+{
+    "checksum": "9ee6edcde17ccdc2bbff3bc7b8835a4e",
+    "wallpaper": "/home/unner/Wallpapers/touhou-lake.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#15161e",
+        "foreground": "#c4c4c6",
+        "cursor": "#c4c4c6"
+    },
+    "colors": {
+        "color0": "#15161e",
+        "color1": "#9E94AB",
+        "color2": "#DD9DB1",
+        "color3": "#9CA9C4",
+        "color4": "#B7B3CC",
+        "color5": "#CCB7C9",
+        "color6": "#BAC4D7",
+        "color7": "#c4c4c6",
+        "color8": "#5e6173",
+        "color9": "#9E94AB",
+        "color10": "#DD9DB1",
+        "color11": "#9CA9C4",
+        "color12": "#B7B3CC",
+        "color13": "#CCB7C9",
+        "color14": "#BAC4D7",
+        "color15": "#c4c4c6"
+    }
+}

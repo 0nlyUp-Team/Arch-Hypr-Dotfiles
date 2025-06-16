@@ -1,0 +1,28 @@
+{
+    "checksum": "fd0fdc36193051d715d3955c62ab85a3",
+    "wallpaper": "/home/unner/Wallpapers/flowers-9.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#101119",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#101119",
+        "color1": "#616579",
+        "color2": "#707589",
+        "color3": "#7D8298",
+        "color4": "#9696AE",
+        "color5": "#B0B0C8",
+        "color6": "#BEBDCE",
+        "color7": "#c3c3c5",
+        "color8": "#5b5f70",
+        "color9": "#616579",
+        "color10": "#707589",
+        "color11": "#7D8298",
+        "color12": "#9696AE",
+        "color13": "#B0B0C8",
+        "color14": "#BEBDCE",
+        "color15": "#c3c3c5"
+    }
+}

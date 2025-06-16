@@ -1,0 +1,28 @@
+{
+    "checksum": "4fd846d0a17510ca1d1a4d4ac37594b1",
+    "wallpaper": "/home/unner/Wallpapers/lantern-light-room.png",
+    "alpha": "100",
+    "special": {
+        "background": "#21212d",
+        "foreground": "#c7c7ca",
+        "cursor": "#c7c7ca"
+    },
+    "colors": {
+        "color0": "#21212d",
+        "color1": "#7E8098",
+        "color2": "#85849B",
+        "color3": "#948EA5",
+        "color4": "#AC9AAE",
+        "color5": "#B9A3B5",
+        "color6": "#CDA9B3",
+        "color7": "#c7c7ca",
+        "color8": "#66667d",
+        "color9": "#7E8098",
+        "color10": "#85849B",
+        "color11": "#948EA5",
+        "color12": "#AC9AAE",
+        "color13": "#B9A3B5",
+        "color14": "#CDA9B3",
+        "color15": "#c7c7ca"
+    }
+}

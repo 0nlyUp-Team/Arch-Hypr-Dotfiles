@@ -1,0 +1,28 @@
+{
+    "checksum": "399080fc68aab0d3bcd947d0dfddf956",
+    "wallpaper": "/home/unner/Wallpapers/miku vs teto.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#030101",
+        "foreground": "#c0bfbf",
+        "cursor": "#c0bfbf"
+    },
+    "colors": {
+        "color0": "#030101",
+        "color1": "#788B87",
+        "color2": "#7597AE",
+        "color3": "#51ACBE",
+        "color4": "#66B4B9",
+        "color5": "#B2B9BD",
+        "color6": "#F7A2A8",
+        "color7": "#c0bfbf",
+        "color8": "#635050",
+        "color9": "#788B87",
+        "color10": "#7597AE",
+        "color11": "#51ACBE",
+        "color12": "#66B4B9",
+        "color13": "#B2B9BD",
+        "color14": "#F7A2A8",
+        "color15": "#c0bfbf"
+    }
+}

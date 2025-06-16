@@ -1,0 +1,28 @@
+{
+    "checksum": "a7f01ebdd97464f6a948a447c047a279",
+    "wallpaper": "/home/unner/Wallpapers/dragon.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#20212b",
+        "foreground": "#c7c7ca",
+        "cursor": "#c7c7ca"
+    },
+    "colors": {
+        "color0": "#20212b",
+        "color1": "#E0A0B2",
+        "color2": "#9AA8C7",
+        "color3": "#B1B2CF",
+        "color4": "#CBB7CC",
+        "color5": "#B8C4DB",
+        "color6": "#D3CAD3",
+        "color7": "#c7c7ca",
+        "color8": "#66667c",
+        "color9": "#E0A0B2",
+        "color10": "#9AA8C7",
+        "color11": "#B1B2CF",
+        "color12": "#CBB7CC",
+        "color13": "#B8C4DB",
+        "color14": "#D3CAD3",
+        "color15": "#c7c7ca"
+    }
+}

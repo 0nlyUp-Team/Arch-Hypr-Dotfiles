@@ -1,0 +1,28 @@
+{
+    "checksum": "3b2efb3815a888dd9557fd67436f786e",
+    "wallpaper": "/home/unner/Wallpapers/train-sideview.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0b0b12",
+        "foreground": "#c2c2c3",
+        "cursor": "#c2c2c3"
+    },
+    "colors": {
+        "color0": "#0b0b12",
+        "color1": "#5E6176",
+        "color2": "#63667C",
+        "color3": "#5D6984",
+        "color4": "#6F7288",
+        "color5": "#837E94",
+        "color6": "#9C8CA1",
+        "color7": "#c2c2c3",
+        "color8": "#58586b",
+        "color9": "#5E6176",
+        "color10": "#63667C",
+        "color11": "#5D6984",
+        "color12": "#6F7288",
+        "color13": "#837E94",
+        "color14": "#9C8CA1",
+        "color15": "#c2c2c3"
+    }
+}

@@ -24,11 +24,11 @@ cat > "$LOCK_CONF" <<EOF
 background {
   monitor =
   path = \$HOME/.config/lock.jpeg
-  blur_passes = 2
-  blur_size = 7
+  blur_passes = 4
+  blur_size = 1
   noise = 0.023
-  contrast = 0.8916
-  brightness = 0.8172
+  contrast = 1.0
+  brightness = 1.0
   vibrancy = 0.1696
   vibrancy_darkness = 0.0
 }
@@ -109,7 +109,7 @@ input-field {
 EOF
 
 img="$HOME/.config/lock.jpeg"
-grim -t jpeg -q 42 "$img"
+grim -t jpeg -q 32 "$img"
 hyprlock
 rm "$img"
 

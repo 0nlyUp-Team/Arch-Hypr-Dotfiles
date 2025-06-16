@@ -1,0 +1,28 @@
+{
+    "checksum": "d680264aeb8fbc353472c62247bcccbd",
+    "wallpaper": "/home/unner/Wallpapers/old-computer.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0f0f17",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#0f0f17",
+        "color1": "#6B7390",
+        "color2": "#A87489",
+        "color3": "#7985A9",
+        "color4": "#9F94B2",
+        "color5": "#DD92A9",
+        "color6": "#98ABD7",
+        "color7": "#c3c3c5",
+        "color8": "#5b5b6f",
+        "color9": "#6B7390",
+        "color10": "#A87489",
+        "color11": "#7985A9",
+        "color12": "#9F94B2",
+        "color13": "#DD92A9",
+        "color14": "#98ABD7",
+        "color15": "#c3c3c5"
+    }
+}

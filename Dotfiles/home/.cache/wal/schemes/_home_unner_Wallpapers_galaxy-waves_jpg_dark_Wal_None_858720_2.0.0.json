@@ -1,0 +1,28 @@
+{
+    "checksum": "36938fcfb2b77fdc8be39d411b74d321",
+    "wallpaper": "/home/unner/Wallpapers/galaxy-waves.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0b12",
+        "foreground": "#c1c2c3",
+        "cursor": "#c1c2c3"
+    },
+    "colors": {
+        "color0": "#0a0b12",
+        "color1": "#525669",
+        "color2": "#616579",
+        "color3": "#6F758B",
+        "color4": "#857A84",
+        "color5": "#7B859F",
+        "color6": "#8694B1",
+        "color7": "#c1c2c3",
+        "color8": "#575b6b",
+        "color9": "#525669",
+        "color10": "#616579",
+        "color11": "#6F758B",
+        "color12": "#857A84",
+        "color13": "#7B859F",
+        "color14": "#8694B1",
+        "color15": "#c1c2c3"
+    }
+}

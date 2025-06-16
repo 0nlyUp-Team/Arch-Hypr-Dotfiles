@@ -1,0 +1,28 @@
+{
+    "checksum": "31e0cf679946d49227e4f9e7c617c15c",
+    "wallpaper": "/home/unner/Wallpapers/hlmd.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0A0735",
+        "foreground": "#c1c1cc",
+        "cursor": "#c1c1cc"
+    },
+    "colors": {
+        "color0": "#0A0735",
+        "color1": "#D4045D",
+        "color2": "#D70661",
+        "color3": "#E12160",
+        "color4": "#9F5B5C",
+        "color5": "#D55D66",
+        "color6": "#908D7E",
+        "color7": "#c1c1cc",
+        "color8": "#626176",
+        "color9": "#D4045D",
+        "color10": "#D70661",
+        "color11": "#E12160",
+        "color12": "#9F5B5C",
+        "color13": "#D55D66",
+        "color14": "#908D7E",
+        "color15": "#c1c1cc"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "checksum": "7051835f56e56b47da1179275fe101ba",
+    "wallpaper": "/home/unner/Wallpapers/[4K-60]\u5c0f\u732b\u70e7.mp4",
+    "alpha": "100",
+    "special": {
+        "background": "#413946",
+        "foreground": "#cfcdd0",
+        "cursor": "#cfcdd0"
+    },
+    "colors": {
+        "color0": "#413946",
+        "color1": "#B8CFDC",
+        "color2": "#D1CDD4",
+        "color3": "#E7D0D5",
+        "color4": "#E1EAD5",
+        "color5": "#D3D6E8",
+        "color6": "#E4DCE9",
+        "color7": "#cfcdd0",
+        "color8": "#85758e",
+        "color9": "#B8CFDC",
+        "color10": "#D1CDD4",
+        "color11": "#E7D0D5",
+        "color12": "#E1EAD5",
+        "color13": "#D3D6E8",
+        "color14": "#E4DCE9",
+        "color15": "#cfcdd0"
+    }
+}

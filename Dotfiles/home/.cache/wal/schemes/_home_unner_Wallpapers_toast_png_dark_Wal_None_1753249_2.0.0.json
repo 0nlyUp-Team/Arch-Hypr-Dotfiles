@@ -1,0 +1,28 @@
+{
+    "checksum": "70af7ba1d6bf91fcdcc723eb7fefee90",
+    "wallpaper": "/home/unner/Wallpapers/toast.png",
+    "alpha": "100",
+    "special": {
+        "background": "#11121c",
+        "foreground": "#c3c3c6",
+        "cursor": "#c3c3c6"
+    },
+    "colors": {
+        "color0": "#11121c",
+        "color1": "#D7C7B8",
+        "color2": "#E5D1B9",
+        "color3": "#B0C2DB",
+        "color4": "#ADCCE7",
+        "color5": "#D8D1D3",
+        "color6": "#E2D8D3",
+        "color7": "#c3c3c6",
+        "color8": "#5d5d71",
+        "color9": "#D7C7B8",
+        "color10": "#E5D1B9",
+        "color11": "#B0C2DB",
+        "color12": "#ADCCE7",
+        "color13": "#D8D1D3",
+        "color14": "#E2D8D3",
+        "color15": "#c3c3c6"
+    }
+}

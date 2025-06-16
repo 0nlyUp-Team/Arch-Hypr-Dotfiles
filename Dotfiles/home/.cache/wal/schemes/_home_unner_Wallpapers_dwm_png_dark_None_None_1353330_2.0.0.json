@@ -1,0 +1,28 @@
+{
+    "checksum": "22354c9b8007e2d645eb6ebdcdfde44d",
+    "wallpaper": "/home/unner/Wallpapers/dwm.png",
+    "alpha": "100",
+    "special": {
+        "background": "#852510",
+        "foreground": "#e0c8c3",
+        "cursor": "#e0c8c3"
+    },
+    "colors": {
+        "color0": "#852510",
+        "color1": "#C84690",
+        "color2": "#D06F9D",
+        "color3": "#C248AD",
+        "color4": "#BC4ACF",
+        "color5": "#B64CED",
+        "color6": "#D8A8C0",
+        "color7": "#e0c8c3",
+        "color8": "#94817d",
+        "color9": "#C84690",
+        "color10": "#D06F9D",
+        "color11": "#C248AD",
+        "color12": "#BC4ACF",
+        "color13": "#B64CED",
+        "color14": "#D8A8C0",
+        "color15": "#e0c8c3"
+    }
+}

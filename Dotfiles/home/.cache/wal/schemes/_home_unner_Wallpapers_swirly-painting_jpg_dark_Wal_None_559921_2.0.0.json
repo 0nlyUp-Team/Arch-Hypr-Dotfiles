@@ -1,0 +1,28 @@
+{
+    "checksum": "dc94cab1c7c5b725a5f6ab205d9abb4a",
+    "wallpaper": "/home/unner/Wallpapers/swirly-painting.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#11121b",
+        "foreground": "#c3c3c6",
+        "cursor": "#c3c3c6"
+    },
+    "colors": {
+        "color0": "#11121b",
+        "color1": "#817F94",
+        "color2": "#9D8CA1",
+        "color3": "#E59BAD",
+        "color4": "#DBA0B1",
+        "color5": "#BEB3C1",
+        "color6": "#DCBAC4",
+        "color7": "#c3c3c6",
+        "color8": "#5c5c71",
+        "color9": "#817F94",
+        "color10": "#9D8CA1",
+        "color11": "#E59BAD",
+        "color12": "#DBA0B1",
+        "color13": "#BEB3C1",
+        "color14": "#DCBAC4",
+        "color15": "#c3c3c6"
+    }
+}

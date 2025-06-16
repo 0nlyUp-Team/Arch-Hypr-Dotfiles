@@ -1,0 +1,28 @@
+{
+    "checksum": "4473def70ed43be51cc34b731ba4bd28",
+    "wallpaper": "/home/unner/Wallpapers/mushishi.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0e0f16",
+        "foreground": "#c2c3c4",
+        "cursor": "#c2c3c4"
+    },
+    "colors": {
+        "color0": "#0e0f16",
+        "color1": "#616679",
+        "color2": "#70768C",
+        "color3": "#817E85",
+        "color4": "#7C859D",
+        "color5": "#949CAD",
+        "color6": "#B0C1C9",
+        "color7": "#c2c3c4",
+        "color8": "#5a5e6e",
+        "color9": "#616679",
+        "color10": "#70768C",
+        "color11": "#817E85",
+        "color12": "#7C859D",
+        "color13": "#949CAD",
+        "color14": "#B0C1C9",
+        "color15": "#c2c3c4"
+    }
+}

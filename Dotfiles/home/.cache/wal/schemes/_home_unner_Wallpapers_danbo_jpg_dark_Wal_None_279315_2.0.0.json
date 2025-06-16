@@ -1,0 +1,28 @@
+{
+    "checksum": "b37a72a8eca9068f54da4f18347e8df9",
+    "wallpaper": "/home/unner/Wallpapers/danbo.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0d14",
+        "foreground": "#c2c2c4",
+        "cursor": "#c2c2c4"
+    },
+    "colors": {
+        "color0": "#0d0d14",
+        "color1": "#605F81",
+        "color2": "#70758A",
+        "color3": "#807E88",
+        "color4": "#7D8297",
+        "color5": "#9598AA",
+        "color6": "#BFC9BA",
+        "color7": "#c2c2c4",
+        "color8": "#59596d",
+        "color9": "#605F81",
+        "color10": "#70758A",
+        "color11": "#807E88",
+        "color12": "#7D8297",
+        "color13": "#9598AA",
+        "color14": "#BFC9BA",
+        "color15": "#c2c2c4"
+    }
+}

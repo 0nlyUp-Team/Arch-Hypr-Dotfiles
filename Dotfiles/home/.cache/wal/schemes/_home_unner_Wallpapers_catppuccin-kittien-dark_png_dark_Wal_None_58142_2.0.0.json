@@ -1,0 +1,28 @@
+{
+    "checksum": "8536b23f403825f5a13e0d587044d70d",
+    "wallpaper": "/home/unner/Wallpapers/catppuccin-kittien-dark.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0812",
+        "foreground": "#c1c1c3",
+        "cursor": "#c1c1c3"
+    },
+    "colors": {
+        "color0": "#0a0812",
+        "color1": "#887A7F",
+        "color2": "#8E8085",
+        "color3": "#AD9D9E",
+        "color4": "#CEBBBA",
+        "color5": "#D9C5C3",
+        "color6": "#DCC8C6",
+        "color7": "#c1c1c3",
+        "color8": "#5a576a",
+        "color9": "#887A7F",
+        "color10": "#8E8085",
+        "color11": "#AD9D9E",
+        "color12": "#CEBBBA",
+        "color13": "#D9C5C3",
+        "color14": "#DCC8C6",
+        "color15": "#c1c1c3"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "checksum": "4143855e6f2b2ff957126ebf7682e09a",
+    "wallpaper": "/home/unner/Wallpapers/snowy-map.png",
+    "alpha": "100",
+    "special": {
+        "background": "#101018",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#101018",
+        "color1": "#63667C",
+        "color2": "#6E7289",
+        "color3": "#7D8299",
+        "color4": "#81859E",
+        "color5": "#8C90A9",
+        "color6": "#A0A3BD",
+        "color7": "#c3c3c5",
+        "color8": "#5b5b6f",
+        "color9": "#63667C",
+        "color10": "#6E7289",
+        "color11": "#7D8299",
+        "color12": "#81859E",
+        "color13": "#8C90A9",
+        "color14": "#A0A3BD",
+        "color15": "#c3c3c5"
+    }
+}

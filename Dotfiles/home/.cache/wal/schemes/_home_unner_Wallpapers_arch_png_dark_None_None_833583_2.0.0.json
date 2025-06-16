@@ -1,0 +1,28 @@
+{
+    "checksum": "1c5b0b77c7f694abc479c1f6802acb26",
+    "wallpaper": "/home/unner/Wallpapers/arch.png",
+    "alpha": "100",
+    "special": {
+        "background": "#00141D",
+        "foreground": "#bfc4c6",
+        "cursor": "#bfc4c6"
+    },
+    "colors": {
+        "color0": "#00141D",
+        "color1": "#339BCA",
+        "color2": "#259BD0",
+        "color3": "#28B5F4",
+        "color4": "#4FC3F7",
+        "color5": "#70CEFA",
+        "color6": "#8AB5C9",
+        "color7": "#bfc4c6",
+        "color8": "#58666c",
+        "color9": "#339BCA",
+        "color10": "#259BD0",
+        "color11": "#28B5F4",
+        "color12": "#4FC3F7",
+        "color13": "#70CEFA",
+        "color14": "#8AB5C9",
+        "color15": "#bfc4c6"
+    }
+}

@@ -106,7 +106,25 @@ window#waybar {
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
+#custom-hyprlock{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
 #clock{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#custom-toggle_blur{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#custom-sysinfo{
     font-size:14px;color:@foreground;
     padding:0px 6px 0px 6px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
@@ -115,18 +133,23 @@ window#waybar {
 #custom-music{
     font-family:"SF Mono";
     font-size:21px;color:@foreground;
-    padding:0px 14px 0px 14px;
-    margin: 12px 0px 0px 32px;
+    padding:0px 6px 0px 6px;
+    margin:0px 0px 0px 0px;
     border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
 }
 
 #battery {font-size:14px;color:#dddddd;border:none;outline:none;}
-#battery.charging {color:#9dff00;border:none;outline:none;}
+#battery.charging {color:#9af30c;border:none;outline:none;}
 #battery.critical {color:#e20000;border:none;outline:none;}
-#battery.full {color:#007ce2;border:none;outline:none;}
+#battery.full {color:@color7;border:none;outline:none;}
 
-#custom-separator{color:@foreground;font-size:21px;border:none;outline:none;}
+#battery.full:hover,#battery.critical:hover,#battery.charging:hover{color:@color2;transition:all 0.3s ease-in-out;}
 
+#custom-separator{color:alpha(@foreground,0.35);font-size:21px;border:none;outline:none;}
+
+#custom-hyprlock:hover,
+#custom-toggle_blur:hover,
+#custom-sysinfo:hover,
 #custom-functional-logo:hover,
 #custom-weather:hover,
 #cpu:hover,
@@ -153,7 +176,7 @@ window#waybar {
     color: @color2;
 }
 #custom-playerctl-play,#custom-playerctl-prev,#custom-playerctl-next{
-    color:@color2;
+    color:@color15;
     font-size:16px;
     margin: 4px;
     transition: all 0.3s ease-in-out;
@@ -168,7 +191,7 @@ window#waybar {
 #custom-icon-group-misc,
 #custom-icon-group-audio,
 #custom-icon-group-work
-{font-size:21px;color:@color2;padding:0px 12px 0 12px;}
+{font-size:21px;color:@color6;padding:0px 12px 0 12px;transition:all 0.3s ease-in-out;}
 
 #custom-icon-group-media:hover,
 #custom-icon-group-system:hover,

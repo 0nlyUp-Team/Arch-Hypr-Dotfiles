@@ -1,0 +1,28 @@
+{
+    "checksum": "8f7ebbc78b06bc1094a59d213922a41c",
+    "wallpaper": "/home/unner/Wallpapers/pixel-napping.png",
+    "alpha": "100",
+    "special": {
+        "background": "#101018",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#101018",
+        "color1": "#62657B",
+        "color2": "#625D81",
+        "color3": "#73788F",
+        "color4": "#7B8794",
+        "color5": "#8997A5",
+        "color6": "#96B5B2",
+        "color7": "#c3c3c5",
+        "color8": "#5b5b6f",
+        "color9": "#62657B",
+        "color10": "#625D81",
+        "color11": "#73788F",
+        "color12": "#7B8794",
+        "color13": "#8997A5",
+        "color14": "#96B5B2",
+        "color15": "#c3c3c5"
+    }
+}

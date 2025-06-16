@@ -1,0 +1,28 @@
+{
+    "checksum": "759b3dc92939b2188d769b14478e7f7a",
+    "wallpaper": "/home/unner/Wallpapers/bars.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0f16",
+        "foreground": "#c2c3c4",
+        "cursor": "#c2c3c4"
+    },
+    "colors": {
+        "color0": "#0d0f16",
+        "color1": "#DA96A2",
+        "color2": "#EE90A8",
+        "color3": "#A3D5B2",
+        "color4": "#ACE3AA",
+        "color5": "#C4C2AD",
+        "color6": "#8FB5D3",
+        "color7": "#c2c3c4",
+        "color8": "#59606e",
+        "color9": "#DA96A2",
+        "color10": "#EE90A8",
+        "color11": "#A3D5B2",
+        "color12": "#ACE3AA",
+        "color13": "#C4C2AD",
+        "color14": "#8FB5D3",
+        "color15": "#c2c3c4"
+    }
+}

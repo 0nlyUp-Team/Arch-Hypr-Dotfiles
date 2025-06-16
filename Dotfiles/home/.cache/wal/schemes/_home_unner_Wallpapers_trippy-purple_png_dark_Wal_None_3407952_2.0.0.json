@@ -1,0 +1,28 @@
+{
+    "checksum": "2cfb0ced3b97a93b9a27fa0c229f1228",
+    "wallpaper": "/home/unner/Wallpapers/trippy-purple.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0a11",
+        "foreground": "#c1c1c3",
+        "cursor": "#c1c1c3"
+    },
+    "colors": {
+        "color0": "#0a0a11",
+        "color1": "#525569",
+        "color2": "#61647A",
+        "color3": "#6F738A",
+        "color4": "#7B7DA1",
+        "color5": "#7E819B",
+        "color6": "#8F8EAC",
+        "color7": "#c1c1c3",
+        "color8": "#57576b",
+        "color9": "#525569",
+        "color10": "#61647A",
+        "color11": "#6F738A",
+        "color12": "#7B7DA1",
+        "color13": "#7E819B",
+        "color14": "#8F8EAC",
+        "color15": "#c1c1c3"
+    }
+}

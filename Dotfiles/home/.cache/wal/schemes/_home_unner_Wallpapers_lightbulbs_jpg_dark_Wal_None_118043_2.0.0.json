@@ -1,0 +1,28 @@
+{
+    "checksum": "b16b3568fd23f83683e72fac86ee9380",
+    "wallpaper": "/home/unner/Wallpapers/lightbulbs.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191b24",
+        "foreground": "#c5c6c8",
+        "cursor": "#c5c6c8"
+    },
+    "colors": {
+        "color0": "#191b24",
+        "color1": "#7B8298",
+        "color2": "#9993A6",
+        "color3": "#CD9EAD",
+        "color4": "#D7C7B9",
+        "color5": "#E5CDB5",
+        "color6": "#A3B9D2",
+        "color7": "#c5c6c8",
+        "color8": "#616477",
+        "color9": "#7B8298",
+        "color10": "#9993A6",
+        "color11": "#CD9EAD",
+        "color12": "#D7C7B9",
+        "color13": "#E5CDB5",
+        "color14": "#A3B9D2",
+        "color15": "#c5c6c8"
+    }
+}

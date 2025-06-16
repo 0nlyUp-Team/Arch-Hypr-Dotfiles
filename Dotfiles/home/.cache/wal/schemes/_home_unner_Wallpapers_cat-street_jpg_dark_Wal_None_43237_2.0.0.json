@@ -1,0 +1,28 @@
+{
+    "checksum": "c0fcf64e4ed6608254fa73d3d261fa4b",
+    "wallpaper": "/home/unner/Wallpapers/cat-street.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#10111a",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#10111a",
+        "color1": "#717589",
+        "color2": "#837D8E",
+        "color3": "#7D8197",
+        "color4": "#9995A8",
+        "color5": "#B2B5D1",
+        "color6": "#CFB9C4",
+        "color7": "#c3c3c5",
+        "color8": "#5c5f70",
+        "color9": "#717589",
+        "color10": "#837D8E",
+        "color11": "#7D8197",
+        "color12": "#9995A8",
+        "color13": "#B2B5D1",
+        "color14": "#CFB9C4",
+        "color15": "#c3c3c5"
+    }
+}

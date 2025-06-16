@@ -1,0 +1,28 @@
+{
+    "checksum": "e1d8fc41c6e9d7a273c0a70797c0ddba",
+    "wallpaper": "/home/unner/Wallpapers/painting.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0e0e15",
+        "foreground": "#c2c2c4",
+        "cursor": "#c2c2c4"
+    },
+    "colors": {
+        "color0": "#0e0e15",
+        "color1": "#7C839B",
+        "color2": "#8B93AC",
+        "color3": "#9F97A9",
+        "color4": "#E1A9A4",
+        "color5": "#DCC5B6",
+        "color6": "#A1B2CA",
+        "color7": "#c2c2c4",
+        "color8": "#5a5a6e",
+        "color9": "#7C839B",
+        "color10": "#8B93AC",
+        "color11": "#9F97A9",
+        "color12": "#E1A9A4",
+        "color13": "#DCC5B6",
+        "color14": "#A1B2CA",
+        "color15": "#c2c2c4"
+    }
+}

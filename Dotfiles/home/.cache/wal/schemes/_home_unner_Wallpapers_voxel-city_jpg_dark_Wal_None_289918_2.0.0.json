@@ -1,0 +1,28 @@
+{
+    "checksum": "1e4fdf08df52f63fa70115544c7982ec",
+    "wallpaper": "/home/unner/Wallpapers/voxel-city.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0a12",
+        "foreground": "#c1c1c3",
+        "cursor": "#c1c1c3"
+    },
+    "colors": {
+        "color0": "#0a0a12",
+        "color1": "#535669",
+        "color2": "#5E6175",
+        "color3": "#64677A",
+        "color4": "#707489",
+        "color5": "#8B7988",
+        "color6": "#7B849B",
+        "color7": "#c1c1c3",
+        "color8": "#57576b",
+        "color9": "#535669",
+        "color10": "#5E6175",
+        "color11": "#64677A",
+        "color12": "#707489",
+        "color13": "#8B7988",
+        "color14": "#7B849B",
+        "color15": "#c1c1c3"
+    }
+}

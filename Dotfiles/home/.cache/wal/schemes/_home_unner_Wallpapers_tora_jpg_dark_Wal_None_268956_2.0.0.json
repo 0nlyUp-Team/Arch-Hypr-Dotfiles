@@ -1,0 +1,28 @@
+{
+    "checksum": "407d8608e89f393f428e63e1fb6bedfd",
+    "wallpaper": "/home/unner/Wallpapers/tora.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#15161f",
+        "foreground": "#c4c4c7",
+        "cursor": "#c4c4c7"
+    },
+    "colors": {
+        "color0": "#15161f",
+        "color1": "#D0AFAC",
+        "color2": "#E7B9A6",
+        "color3": "#D9C6B8",
+        "color4": "#E6CBB1",
+        "color5": "#C2B9C2",
+        "color6": "#D8CCC6",
+        "color7": "#c4c4c7",
+        "color8": "#5e6174",
+        "color9": "#D0AFAC",
+        "color10": "#E7B9A6",
+        "color11": "#D9C6B8",
+        "color12": "#E6CBB1",
+        "color13": "#C2B9C2",
+        "color14": "#D8CCC6",
+        "color15": "#c4c4c7"
+    }
+}

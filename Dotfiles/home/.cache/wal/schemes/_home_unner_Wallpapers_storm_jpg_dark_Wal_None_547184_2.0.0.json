@@ -1,0 +1,28 @@
+{
+    "checksum": "be8b2e14988aa7a8b1f2b011efaeab42",
+    "wallpaper": "/home/unner/Wallpapers/storm.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0f1018",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#0f1018",
+        "color1": "#71768B",
+        "color2": "#847C92",
+        "color3": "#7D8298",
+        "color4": "#7F87A0",
+        "color5": "#8F93AB",
+        "color6": "#8F94AA",
+        "color7": "#c3c3c5",
+        "color8": "#5b5b6f",
+        "color9": "#71768B",
+        "color10": "#847C92",
+        "color11": "#7D8298",
+        "color12": "#7F87A0",
+        "color13": "#8F93AB",
+        "color14": "#8F94AA",
+        "color15": "#c3c3c5"
+    }
+}

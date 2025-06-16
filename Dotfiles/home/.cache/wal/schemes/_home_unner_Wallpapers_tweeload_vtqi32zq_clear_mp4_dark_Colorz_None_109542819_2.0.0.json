@@ -1,0 +1,28 @@
+{
+    "checksum": "2d026de46fba509e3aec646a02f63e52",
+    "wallpaper": "/home/unner/Wallpapers/tweeload_vtqi32zq_clear.mp4",
+    "alpha": "100",
+    "special": {
+        "background": "#050306",
+        "foreground": "#c0c0c0",
+        "cursor": "#c0c0c0"
+    },
+    "colors": {
+        "color0": "#050306",
+        "color1": "#606A8D",
+        "color2": "#CD718E",
+        "color3": "#7C8CB7",
+        "color4": "#9FA1B9",
+        "color5": "#F0829A",
+        "color6": "#E491A7",
+        "color7": "#c0c0c0",
+        "color8": "#5b5265",
+        "color9": "#606A8D",
+        "color10": "#CD718E",
+        "color11": "#7C8CB7",
+        "color12": "#9FA1B9",
+        "color13": "#F0829A",
+        "color14": "#E491A7",
+        "color15": "#c0c0c0"
+    }
+}

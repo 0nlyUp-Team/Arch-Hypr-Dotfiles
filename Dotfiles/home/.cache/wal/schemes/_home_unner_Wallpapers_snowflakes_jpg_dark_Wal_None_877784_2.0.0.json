@@ -1,0 +1,28 @@
+{
+    "checksum": "b9be30c571d8f1b479b427f27d0a5dc9",
+    "wallpaper": "/home/unner/Wallpapers/snowflakes.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0f1018",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#0f1018",
+        "color1": "#70758B",
+        "color2": "#847C81",
+        "color3": "#7C849C",
+        "color4": "#8994AF",
+        "color5": "#9CB3D8",
+        "color6": "#AEC7E0",
+        "color7": "#c3c3c5",
+        "color8": "#5b5b6f",
+        "color9": "#70758B",
+        "color10": "#847C81",
+        "color11": "#7C849C",
+        "color12": "#8994AF",
+        "color13": "#9CB3D8",
+        "color14": "#AEC7E0",
+        "color15": "#c3c3c5"
+    }
+}

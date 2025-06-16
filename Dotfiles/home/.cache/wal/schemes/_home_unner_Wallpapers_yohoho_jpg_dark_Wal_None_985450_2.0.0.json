@@ -1,0 +1,28 @@
+{
+    "checksum": "b0caab263b076695949d744d16995e67",
+    "wallpaper": "/home/unner/Wallpapers/yohoho.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0a10",
+        "foreground": "#c1c1c3",
+        "cursor": "#c1c1c3"
+    },
+    "colors": {
+        "color0": "#0a0a10",
+        "color1": "#8F7077",
+        "color2": "#A3837E",
+        "color3": "#737287",
+        "color4": "#937A89",
+        "color5": "#AB8A95",
+        "color6": "#F1AA9B",
+        "color7": "#c1c1c3",
+        "color8": "#57576a",
+        "color9": "#8F7077",
+        "color10": "#A3837E",
+        "color11": "#737287",
+        "color12": "#937A89",
+        "color13": "#AB8A95",
+        "color14": "#F1AA9B",
+        "color15": "#c1c1c3"
+    }
+}

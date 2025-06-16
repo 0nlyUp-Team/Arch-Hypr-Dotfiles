@@ -1,0 +1,28 @@
+{
+    "checksum": "0ea01464aef4c3f45d3f484ccd4e0bfa",
+    "wallpaper": "/home/unner/Wallpapers/shrimp-fried-rice.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0e16",
+        "foreground": "#c2c2c4",
+        "cursor": "#c2c2c4"
+    },
+    "colors": {
+        "color0": "#0d0e16",
+        "color1": "#9F92A2",
+        "color2": "#EDB29A",
+        "color3": "#DBABA7",
+        "color4": "#BECBB1",
+        "color5": "#DDCEA5",
+        "color6": "#E8CFAF",
+        "color7": "#c2c2c4",
+        "color8": "#595d6e",
+        "color9": "#9F92A2",
+        "color10": "#EDB29A",
+        "color11": "#DBABA7",
+        "color12": "#BECBB1",
+        "color13": "#DDCEA5",
+        "color14": "#E8CFAF",
+        "color15": "#c2c2c4"
+    }
+}

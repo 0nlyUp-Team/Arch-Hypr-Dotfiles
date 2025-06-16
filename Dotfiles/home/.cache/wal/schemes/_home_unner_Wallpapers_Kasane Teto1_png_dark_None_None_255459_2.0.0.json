@@ -1,0 +1,28 @@
+{
+    "checksum": "3aafc82a5301a2be3c68b1de602ee403",
+    "wallpaper": "/home/unner/Wallpapers/Kasane Teto1.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0d0d",
+        "foreground": "#c2c2c2",
+        "cursor": "#c2c2c2"
+    },
+    "colors": {
+        "color0": "#0d0d0d",
+        "color1": "#9F5C61",
+        "color2": "#CF7875",
+        "color3": "#C38774",
+        "color4": "#B39A96",
+        "color5": "#D2A49C",
+        "color6": "#DDC5B4",
+        "color7": "#c2c2c2",
+        "color8": "#6a5757",
+        "color9": "#9F5C61",
+        "color10": "#CF7875",
+        "color11": "#C38774",
+        "color12": "#B39A96",
+        "color13": "#D2A49C",
+        "color14": "#DDC5B4",
+        "color15": "#c2c2c2"
+    }
+}

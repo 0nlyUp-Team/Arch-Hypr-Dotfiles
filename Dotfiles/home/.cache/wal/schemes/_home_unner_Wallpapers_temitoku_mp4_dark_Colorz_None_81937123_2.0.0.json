@@ -1,0 +1,28 @@
+{
+    "checksum": "88c05e25df647c637ff36752515af565",
+    "wallpaper": "/home/unner/Wallpapers/temitoku.mp4",
+    "alpha": "100",
+    "special": {
+        "background": "#0a090b",
+        "foreground": "#c1c1c2",
+        "cursor": "#c1c1c2"
+    },
+    "colors": {
+        "color0": "#0a090b",
+        "color1": "#373B44",
+        "color2": "#4E3948",
+        "color3": "#30434A",
+        "color4": "#4C4A53",
+        "color5": "#6A5F55",
+        "color6": "#C05A79",
+        "color7": "#c1c1c2",
+        "color8": "#555569",
+        "color9": "#373B44",
+        "color10": "#4E3948",
+        "color11": "#30434A",
+        "color12": "#4C4A53",
+        "color13": "#6A5F55",
+        "color14": "#C05A79",
+        "color15": "#c1c1c2"
+    }
+}

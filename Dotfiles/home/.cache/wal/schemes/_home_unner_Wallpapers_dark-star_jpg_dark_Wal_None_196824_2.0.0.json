@@ -1,0 +1,28 @@
+{
+    "checksum": "8a7d5916d6ba88cdaa23b35339c2951f",
+    "wallpaper": "/home/unner/Wallpapers/dark-star.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0c12",
+        "foreground": "#c2c2c3",
+        "cursor": "#c2c2c3"
+    },
+    "colors": {
+        "color0": "#0c0c12",
+        "color1": "#88687B",
+        "color2": "#6E748B",
+        "color3": "#9B778C",
+        "color4": "#7A88A3",
+        "color5": "#9E9FB4",
+        "color6": "#E48FA7",
+        "color7": "#c2c2c3",
+        "color8": "#58586c",
+        "color9": "#88687B",
+        "color10": "#6E748B",
+        "color11": "#9B778C",
+        "color12": "#7A88A3",
+        "color13": "#9E9FB4",
+        "color14": "#E48FA7",
+        "color15": "#c2c2c3"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "checksum": "c982463e26c996bc70d3fabba1e113a1",
+    "wallpaper": "/home/unner/Wallpapers/voyager-8.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#13151d",
+        "foreground": "#c4c4c6",
+        "cursor": "#c4c4c6"
+    },
+    "colors": {
+        "color0": "#13151d",
+        "color1": "#907991",
+        "color2": "#7E8198",
+        "color3": "#9B8EAC",
+        "color4": "#DE9DB2",
+        "color5": "#B59FCA",
+        "color6": "#CDA6D4",
+        "color7": "#c4c4c6",
+        "color8": "#5e6172",
+        "color9": "#907991",
+        "color10": "#7E8198",
+        "color11": "#9B8EAC",
+        "color12": "#DE9DB2",
+        "color13": "#B59FCA",
+        "color14": "#CDA6D4",
+        "color15": "#c4c4c6"
+    }
+}

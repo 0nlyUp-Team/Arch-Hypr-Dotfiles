@@ -1,0 +1,28 @@
+{
+    "checksum": "b576cc08bec50c0d3ec5beda22c36fc9",
+    "wallpaper": "/home/unner/Wallpapers/square-city.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#11121a",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#11121a",
+        "color1": "#64667B",
+        "color2": "#727388",
+        "color3": "#887C92",
+        "color4": "#A8A5B1",
+        "color5": "#DC9CAD",
+        "color6": "#D5B5D0",
+        "color7": "#c3c3c5",
+        "color8": "#5c5c71",
+        "color9": "#64667B",
+        "color10": "#727388",
+        "color11": "#887C92",
+        "color12": "#A8A5B1",
+        "color13": "#DC9CAD",
+        "color14": "#D5B5D0",
+        "color15": "#c3c3c5"
+    }
+}

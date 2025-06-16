@@ -1,0 +1,28 @@
+{
+    "checksum": "ce8a0e72a22a72737a952596d760205c",
+    "wallpaper": "/home/unner/Wallpapers/wheat.png",
+    "alpha": "100",
+    "special": {
+        "background": "#191a24",
+        "foreground": "#c5c5c8",
+        "cursor": "#c5c5c8"
+    },
+    "colors": {
+        "color0": "#191a24",
+        "color1": "#9E93A8",
+        "color2": "#F0B39C",
+        "color3": "#DCA8A3",
+        "color4": "#D3B1B5",
+        "color5": "#E9C8AE",
+        "color6": "#B0B2CD",
+        "color7": "#c5c5c8",
+        "color8": "#616477",
+        "color9": "#9E93A8",
+        "color10": "#F0B39C",
+        "color11": "#DCA8A3",
+        "color12": "#D3B1B5",
+        "color13": "#E9C8AE",
+        "color14": "#B0B2CD",
+        "color15": "#c5c5c8"
+    }
+}

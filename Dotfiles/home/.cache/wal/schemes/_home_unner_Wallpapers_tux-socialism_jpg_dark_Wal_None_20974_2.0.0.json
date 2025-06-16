@@ -1,0 +1,28 @@
+{
+    "checksum": "698531aa0232c78f06ec76f29c685fb4",
+    "wallpaper": "/home/unner/Wallpapers/tux-socialism.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0e15",
+        "foreground": "#c2c2c4",
+        "cursor": "#c2c2c4"
+    },
+    "colors": {
+        "color0": "#0d0e15",
+        "color1": "#A2939B",
+        "color2": "#B8ABAE",
+        "color3": "#CBB8B9",
+        "color4": "#CDC2BC",
+        "color5": "#DBD2C9",
+        "color6": "#E3DACF",
+        "color7": "#c2c2c4",
+        "color8": "#595d6d",
+        "color9": "#A2939B",
+        "color10": "#B8ABAE",
+        "color11": "#CBB8B9",
+        "color12": "#CDC2BC",
+        "color13": "#DBD2C9",
+        "color14": "#E3DACF",
+        "color15": "#c2c2c4"
+    }
+}

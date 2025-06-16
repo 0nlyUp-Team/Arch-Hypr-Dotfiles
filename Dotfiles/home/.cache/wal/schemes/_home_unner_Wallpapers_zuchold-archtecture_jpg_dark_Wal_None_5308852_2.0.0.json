@@ -1,0 +1,28 @@
+{
+    "checksum": "995959032ebdc8f438e4b308549afb2a",
+    "wallpaper": "/home/unner/Wallpapers/zuchold-archtecture.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#12131a",
+        "foreground": "#c3c4c5",
+        "cursor": "#c3c4c5"
+    },
+    "colors": {
+        "color0": "#12131a",
+        "color1": "#A397AC",
+        "color2": "#DFAFAF",
+        "color3": "#D2AAB6",
+        "color4": "#B8B3CB",
+        "color5": "#CCB7C9",
+        "color6": "#DFC6C0",
+        "color7": "#c3c4c5",
+        "color8": "#5c6071",
+        "color9": "#A397AC",
+        "color10": "#DFAFAF",
+        "color11": "#D2AAB6",
+        "color12": "#B8B3CB",
+        "color13": "#CCB7C9",
+        "color14": "#DFC6C0",
+        "color15": "#c3c4c5"
+    }
+}

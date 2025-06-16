@@ -1,0 +1,28 @@
+{
+    "checksum": "80dfd73f057a542029e26526cb4637a7",
+    "wallpaper": "/home/unner/Wallpapers/puffy-stars.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0E101C",
+        "foreground": "#c2c3c6",
+        "cursor": "#c2c3c6"
+    },
+    "colors": {
+        "color0": "#0E101C",
+        "color1": "#626679",
+        "color2": "#5E6983",
+        "color3": "#6F7387",
+        "color4": "#8A7B91",
+        "color5": "#7D8098",
+        "color6": "#A28DA5",
+        "color7": "#c2c3c6",
+        "color8": "#5c5e70",
+        "color9": "#626679",
+        "color10": "#5E6983",
+        "color11": "#6F7387",
+        "color12": "#8A7B91",
+        "color13": "#7D8098",
+        "color14": "#A28DA5",
+        "color15": "#c2c3c6"
+    }
+}

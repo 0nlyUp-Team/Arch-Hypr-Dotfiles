@@ -1,0 +1,28 @@
+{
+    "checksum": "063f61e903837ad2aeb5d2e73d3cad0a",
+    "wallpaper": "/home/unner/Wallpapers/day-forest-path.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0d15",
+        "foreground": "#c2c2c4",
+        "cursor": "#c2c2c4"
+    },
+    "colors": {
+        "color0": "#0d0d15",
+        "color1": "#606579",
+        "color2": "#70857B",
+        "color3": "#5D7183",
+        "color4": "#6D7389",
+        "color5": "#788B9D",
+        "color6": "#8E9CAE",
+        "color7": "#c2c2c4",
+        "color8": "#59596d",
+        "color9": "#606579",
+        "color10": "#70857B",
+        "color11": "#5D7183",
+        "color12": "#6D7389",
+        "color13": "#788B9D",
+        "color14": "#8E9CAE",
+        "color15": "#c2c2c4"
+    }
+}

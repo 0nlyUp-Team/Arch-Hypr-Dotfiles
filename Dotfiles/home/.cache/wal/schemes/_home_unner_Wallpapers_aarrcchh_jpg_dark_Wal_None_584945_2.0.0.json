@@ -1,0 +1,28 @@
+{
+    "checksum": "4f468f0b7995ef1618107897ab254bd1",
+    "wallpaper": "/home/unner/Wallpapers/aarrcchh.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0b0b0b",
+        "foreground": "#c2c2c2",
+        "cursor": "#c2c2c2"
+    },
+    "colors": {
+        "color0": "#0b0b0b",
+        "color1": "#05ADD2",
+        "color2": "#1FB3D5",
+        "color3": "#53C7CF",
+        "color4": "#D6B29B",
+        "color5": "#F7CFB3",
+        "color6": "#9EE2DE",
+        "color7": "#c2c2c2",
+        "color8": "#695656",
+        "color9": "#05ADD2",
+        "color10": "#1FB3D5",
+        "color11": "#53C7CF",
+        "color12": "#D6B29B",
+        "color13": "#F7CFB3",
+        "color14": "#9EE2DE",
+        "color15": "#c2c2c2"
+    }
+}

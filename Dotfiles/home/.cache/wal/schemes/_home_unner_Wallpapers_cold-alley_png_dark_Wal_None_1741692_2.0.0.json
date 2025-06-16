@@ -1,0 +1,28 @@
+{
+    "checksum": "bd8ea0117a2aee578531808d9c8c1e1d",
+    "wallpaper": "/home/unner/Wallpapers/cold-alley.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0f0f17",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#0f0f17",
+        "color1": "#5F6B81",
+        "color2": "#68758B",
+        "color3": "#8E7385",
+        "color4": "#77899E",
+        "color5": "#8F9FAE",
+        "color6": "#9AB2CF",
+        "color7": "#c3c3c5",
+        "color8": "#5b5b6f",
+        "color9": "#5F6B81",
+        "color10": "#68758B",
+        "color11": "#8E7385",
+        "color12": "#77899E",
+        "color13": "#8F9FAE",
+        "color14": "#9AB2CF",
+        "color15": "#c3c3c5"
+    }
+}

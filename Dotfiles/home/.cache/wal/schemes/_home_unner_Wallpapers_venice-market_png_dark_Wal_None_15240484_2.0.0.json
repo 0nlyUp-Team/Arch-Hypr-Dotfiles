@@ -1,0 +1,28 @@
+{
+    "checksum": "ebc5249d627e9ac1dcb9cc0d2db4bd07",
+    "wallpaper": "/home/unner/Wallpapers/venice-market.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0f1018",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#0f1018",
+        "color1": "#5E6681",
+        "color2": "#71738A",
+        "color3": "#837E92",
+        "color4": "#9A94A5",
+        "color5": "#DBABAB",
+        "color6": "#E3CCB6",
+        "color7": "#c3c3c5",
+        "color8": "#5b5b6f",
+        "color9": "#5E6681",
+        "color10": "#71738A",
+        "color11": "#837E92",
+        "color12": "#9A94A5",
+        "color13": "#DBABAB",
+        "color14": "#E3CCB6",
+        "color15": "#c3c3c5"
+    }
+}

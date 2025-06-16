@@ -1,0 +1,28 @@
+{
+    "checksum": "158e5e68593c2dcdb8d92394773618e9",
+    "wallpaper": "/home/unner/Wallpapers/panes.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#11131b",
+        "foreground": "#c3c4c6",
+        "cursor": "#c3c4c6"
+    },
+    "colors": {
+        "color0": "#11131b",
+        "color1": "#7F839D",
+        "color2": "#7F87A2",
+        "color3": "#8C8FA7",
+        "color4": "#A5B1D2",
+        "color5": "#B4BFD9",
+        "color6": "#C8A9C1",
+        "color7": "#c3c4c6",
+        "color8": "#5c6071",
+        "color9": "#7F839D",
+        "color10": "#7F87A2",
+        "color11": "#8C8FA7",
+        "color12": "#A5B1D2",
+        "color13": "#B4BFD9",
+        "color14": "#C8A9C1",
+        "color15": "#c3c4c6"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "checksum": "cb615c9035cc80234ac6c2bc47a89ee4",
+    "wallpaper": "/home/unner/Wallpapers/sunlit-ruins.png",
+    "alpha": "100",
+    "special": {
+        "background": "#101019",
+        "foreground": "#c3c3c5",
+        "cursor": "#c3c3c5"
+    },
+    "colors": {
+        "color0": "#101019",
+        "color1": "#63667C",
+        "color2": "#70748B",
+        "color3": "#887B8E",
+        "color4": "#7D829B",
+        "color5": "#8B92AD",
+        "color6": "#9294AC",
+        "color7": "#c3c3c5",
+        "color8": "#5b5b70",
+        "color9": "#63667C",
+        "color10": "#70748B",
+        "color11": "#887B8E",
+        "color12": "#7D829B",
+        "color13": "#8B92AD",
+        "color14": "#9294AC",
+        "color15": "#c3c3c5"
+    }
+}

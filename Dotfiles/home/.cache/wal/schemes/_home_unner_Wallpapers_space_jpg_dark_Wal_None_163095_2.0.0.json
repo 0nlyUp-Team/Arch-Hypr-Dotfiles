@@ -1,0 +1,28 @@
+{
+    "checksum": "c64920a169457ab2721dcc390ba04908",
+    "wallpaper": "/home/unner/Wallpapers/space.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#12121c",
+        "foreground": "#c3c3c6",
+        "cursor": "#c3c3c6"
+    },
+    "colors": {
+        "color0": "#12121c",
+        "color1": "#747788",
+        "color2": "#807E8D",
+        "color3": "#7E8190",
+        "color4": "#878998",
+        "color5": "#9FA0AE",
+        "color6": "#B8B9C5",
+        "color7": "#c3c3c6",
+        "color8": "#5d5d71",
+        "color9": "#747788",
+        "color10": "#807E8D",
+        "color11": "#7E8190",
+        "color12": "#878998",
+        "color13": "#9FA0AE",
+        "color14": "#B8B9C5",
+        "color15": "#c3c3c6"
+    }
+}
