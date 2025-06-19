@@ -1,17 +1,18 @@
 {
   "logo": {
-    "type": "small",        // Logo type: auto, builtin, small, file, etc.
-    "source": "arch",      // Built-in logo name or file path
-    "width": 65,           // Width in characters (for image logos)
-    "height": 35,          // Height in characters (for image logos)
+    //"type": "small",        // Logo type: auto, builtin, small, file, etc.
+    "source": "arch2",      // Built-in logo name or file path
+    "width": 48,           // Width in characters (for image logos)
+    "height": 48,          // Height in characters (for image logos)
     "padding": {
         "top": 0,          // Top padding
         "left": 0,         // Left padding
         "right": 2         // Right padding
       },
     "color": {             // Override logo colors
-        "1": "blue",
-        "2": "green"
+        "1": "cyan",
+        "2": "blue",
+        "3": "red",
       }
   },
   "display": {
@@ -19,26 +20,37 @@
       "width": 18,
       "separator": " "
     },
-    "separator": " ", // можно заменить на ⚡️ или убрать вовсе
-    "color": "white"
+    "separator": " ", // можно заменить на  или убрать вовсе
+    "color": "blue"
   },
   "modules": [
     "title",
-    "separator",
-    { "type": "os",         "key": "󰌽  OS" },
+    { "type": "os",         "key": " OS" },
     { "type": "kernel",     "key": "  Kernel" },
     { "type": "packages",   "key": "󰏖  Packages" },
-    { "type": "display",    "key": "󰍹  Display" },
+    { "type": "Loadavg",   "key": "L LoadAVG" },
     { "type": "terminal",   "key": "  Terminal" },
     { "type": "wm",         "key": "  WM" },
     { "type": "de",         "key": "  DE" },
-    { "type": "cpu",        "key": "  CPU" },
-    { "type": "gpu",        "key": "󰍹  GPU" },
-   // { "type": "gpuDriver",  "key": "  GPU Driver" },
-    { "type": "memory",     "key": "󰍛  Memory" },
-    { "type": "osUptime",   "key": "󰔟  OS Age" },
-    { "type": "uptime",     "key": "  Uptime" },
-    { "type": "LocalIp",     "key": "  Uptime" },
-    { "type": "colors" }
-  ]
+    { "type": "TerminalFont",  "key": "A Font" },
+    { "type": "Users",      "key": "A Users" },
+    //{ "type": "osUptime",   "key": "󰔟  OS Age" },
+    { "type": "Uptime",     "key": "󱑎 Uptime" },
+    { "type": "LocalIp",    "key": "I LocalIP" },
+    { "type": "PublicIp",    "key": "I PublicIP" },
+    { "type": "Wifi",        "key": "󰖟 Wifi" },
+    { "type": "Media",        "key": "M Media" },
+    // System
+
+    // Devices
+      "break",
+      { "type": "cpu",        "key": "  Cpu" },
+      { "type": "gpu",        "key": "󰍹  Gpu" },
+      { "type": "Memory",     "key": "󰍛  Ram" },
+      "break",
+      { "type": "display",    "key": "󰨇 Display" },
+      { "type": "Chassis",      "key": "C Chassis" },
+      { "type": "Battery",     "key": "B  Battery" },
+      { "type": "PowerAdapter",     "key": "P Pwr Adapter" },
+  ] // End
 }

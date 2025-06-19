@@ -7,9 +7,9 @@ cat > "$KITTY_WAL" << EOF
   # Kitty Colors
     foreground ${colors[7]}
     background ${colors[0]}
-    selection_foreground ${colors[0]}
-    selection_background ${colors[0]}
-    cursor ${colors[0]}
+    selection_foreground ${colors[4]}
+    selection_background ${colors[1]}
+    cursor ${colors[6]}
     cursor_text_color ${colors[0]}
     wayland_titlebar_color ${colors[0]}
     mark1_background ${colors[0]}
@@ -52,9 +52,9 @@ cat > "$KITTY_WAL" << EOF
   # Opacity
     background_opacity 0.6
   # Margin
-    window_margin_width 8
+    window_margin_width 9
   # Padding
-    window_padding_width 8
+    window_padding_width 9
   # Key Binds
     # Navigate in split terminal
       map ctrl+shift+enter     launch --location=hsplit --cwd=current
