@@ -1,0 +1,69 @@
+{
+  // Settings
+  "reload_style_on_change": true,
+  "layer": "top", // Available: [top, bottom, overlay]
+  "position": "bottom", // Available: [left, right, top, bottom]
+  "exclusive": false, // Available: [true, false]
+  "height": 64,
+  "width": 360,
+  "margin-top": 5,
+  "margin-bottom": 20,
+  "margin-left": 5,
+  "margin-right": 5,
+  "spacing": 4,
+  // Modules Deploy
+  "modules-left": ["custom/rofi","custom/separator"],
+  "modules-center": ["custom/app_1","custom/app_2","custom/app_4","custom/app_3"],
+  "modules-right": ["custom/separator"],
+  // Modules
+  "custom/separator": {
+    "format": "|",
+    "tooltip": false
+  },
+  "custom/empty": {
+    "format": "",
+    "tooltip": false
+  },
+  // Apps Modules
+  // 1.Nvim
+  "custom/app_1": {
+    "format": "",
+    "on-click-right": "sh -c 'hyprctl dispatch workspace name:nvim && hyprctl dispatch exec \"kitty nvim\"'",
+    "on-click-middle": "sh -c 'pkill -f nvim'",
+    "on-click": "hyprctl dispatch workspace name:nvim",
+    "tooltip": false,
+    "interval": 3600
+  },
+  "custom/app_2": {
+    "format": "",
+    "on-click-right": "sh -c 'hyprctl dispatch workspace name:filemanager && hyprctl dispatch exec \"thunar\"'",
+    "on-click-middle": "sh -c 'pkill -f thunar'",
+    "on-click": "hyprctl dispatch workspace name:filemanager",
+    "tooltip": false,
+    "interval": 3600
+  },
+  "custom/app_3": {
+    "format": "",
+    "on-click-right": "sh -c 'hyprctl dispatch workspace name:telegram && hyprctl dispatch exec \"ayugram-desktop\"'",
+    "on-click-middle": "sh -c 'pkill -f ayugram-desktop'",
+    "on-click": "hyprctl dispatch workspace name:telegram",
+    "tooltip": false,
+    "interval": 3600
+  },
+  "custom/app_4": {
+    "format": "",
+    "on-click-right": "sh -c 'hyprctl dispatch workspace name:browser && hyprctl dispatch exec \"zen-browser\"'",
+    "on-click-middle": "sh -c 'pkill -f zen-browser'",
+    "on-click": "hyprctl dispatch workspace name:browser",
+    "tooltip": false,
+    "interval": 3600
+  },
+  "custom/rofi": {
+    "format": "",
+    "on-click-right": "rofi -show drun -config ~/.config/rofi/run.rasi",
+    "on-click-middle": "sh -c 'pkill -f rofi'",
+    "on-click": "rofi -show drun -config ~/.config/rofi/run.rasi",
+    "tooltip": false,
+    "interval": 3600
+  },
+}

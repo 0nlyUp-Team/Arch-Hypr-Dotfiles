@@ -1,0 +1,23 @@
+{
+  // Settings
+  "reload_style_on_change": true,
+  "layer": "top", // Available: [top, bottom, overlay]
+  "position": "right", // Available: [left, right, top, bottom]
+  "exclusive": false, // Available: [true, false]
+  "height": 380,
+  "width": 40,
+  "margin-top": 15,
+  "margin-bottom": 15,
+  "margin-left": 15,
+  "margin-right": 15,
+  "spacing": 4,
+  // Modules Deploy
+  "modules-left": ["custom/hover_area"],
+  "modules-center": ["cpu"],
+  "modules-right": ["custom/hover_area"],
+  // Modules
+  "custom/hover_area": {
+    "exec": "echo ''",
+    "tooltip": false
+  },
+}

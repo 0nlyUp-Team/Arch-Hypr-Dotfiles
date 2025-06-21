@@ -1,0 +1,201 @@
+@import url('../../.cache/wal/colors-waybar.css');
+* {min-height:0;font-family:"SF Pro Display, Symbols Nerd Font";}
+window#waybar {
+    background-color:alpha(@color0,0.4);
+    border-radius:8.5px;
+    box-shadow:inset 0 0 0 1px alpha(@foreground,0.35);
+    text-shadow:inherit; /* FIX FUCKING gtk.css TEXT BUG */
+}
+/* Workspace Buttons*/
+#workspaces button {
+    color:@foreground;
+    text-shadow:inherit; /* FIX FUCKING gtk.css TEXT BUG */
+    outline:inherit;border:inherit;background:inherit;
+    /*box-shadow:inset 0 0 4px transparent;*/
+    transition:all 0.4s ease;
+    font-size:14px;
+    font-weight:normal;
+}
+
+#workspaces button:hover {
+    color:@color2;
+    /* background: alpha(@color2, 0.5); */
+    border: none;
+    /* box-shadow:inset 0 0 4px @color2; */
+    outline: none;
+    border-radius: 8px;
+}
+
+#workspaces button.active {
+    color: @color2;
+    border: none;
+    /* box-shadow:inset 0 0 6.5px @color2; */
+    border-radius: 8px;
+    font-weight: normal; /* Для консистентности */
+}
+
+#custom-functional-logo{
+    font-size:21px;color:@color6;
+    padding:0px 2px 0px 12px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#custom-weather{
+    font-size:14px;color:@foreground;
+    padding:0px 4px 0px 0px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#cpu{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#temperature{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#memory{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#network{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#custom-swaync{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#custom-hyprlock{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#tray{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#pulseaudio{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#custom-microphone{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#language{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#custom-hyprlock{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#clock{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#custom-toggle_blur{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#custom-sysinfo{
+    font-size:14px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#custom-music{
+    font-family:"SF Mono";
+    font-size:21px;color:@foreground;
+    padding:0px 6px 0px 6px;
+    margin:0px 0px 0px 0px;
+    border:none;outline:none;text-shadow:inherit;transition:all 0.4s ease;
+}
+
+#battery {font-size:14px;color:#dddddd;border:none;outline:none;}
+#battery.charging {color:#9af30c;border:none;outline:none;}
+#battery.critical {color:#e20000;border:none;outline:none;}
+#battery.full {color:@color7;border:none;outline:none;}
+
+#battery.full:hover,#battery.critical:hover,#battery.charging:hover{color:@color2;transition:all 0.3s ease-in-out;}
+
+#custom-separator{color:alpha(@foreground,0.35);font-size:21px;border:none;outline:none;}
+
+#custom-hyprlock:hover,
+#custom-toggle_blur:hover,
+#custom-sysinfo:hover,
+#custom-functional-logo:hover,
+#custom-weather:hover,
+#cpu:hover,
+#temperature:hover,
+#memory:hover,
+#network:hover,
+#custom-swaync:hover,
+#tray:hover,
+#pulseaudio:hover,
+#custom-microphone:hover,
+#language:hover,
+#clock:hover,
+#custom-music:hover{
+    color:@color3;
+}
+#group-media{padding:4px;transition:all 0.3s ease-in-out;} 
+
+#drawer-child { transition: all 0.3s ease-in-out;}
+#group-media:hover, #custom-test,#custom-playerctl {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+#custom-test{
+    color: @color2;
+}
+#custom-playerctl-play,#custom-playerctl-prev,#custom-playerctl-next{
+    color:@color15;
+    font-size:16px;
+    margin: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+#custom-playerctl-play:hover,#custom-playerctl-prev:hover,#custom-playerctl-next:hover{
+        color:@color14;
+}
+
+#custom-icon-group-media,
+#custom-icon-group-system,
+#custom-icon-group-misc,
+#custom-icon-group-audio,
+#custom-icon-group-work
+{font-size:21px;color:@color6;padding:0px 12px 0 12px;transition:all 0.3s ease-in-out;}
+
+#custom-icon-group-media:hover,
+#custom-icon-group-system:hover,
+#custom-icon-group-misc:hover, 
+#custom-icon-group-audio:hover,
+#custom-icon-group-work:hover
+{color:@color13;}

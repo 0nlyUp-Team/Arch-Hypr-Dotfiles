@@ -1,15 +1,15 @@
 [color]
   gradient = 1
   gradient_count = 8
-  foreground = '#c1c1c3'
-  gradient_color_1 = '#525569'
-  gradient_color_2 = '#61647A'
-  gradient_color_3 = '#6F738A'
-  gradient_color_4 = '#7B7DA1'
-  gradient_color_5 = '#7E819B'
-  gradient_color_6 = '#8F8EAC'
-  gradient_color_7 = '#c1c1c3'
-  gradient_color_8 = '#57576b'
+  foreground = '#c2c1c0'
+  gradient_color_1 = '#9A5438'
+  gradient_color_2 = '#966B55'
+  gradient_color_3 = '#7D807B'
+  gradient_color_4 = '#938977'
+  gradient_color_5 = '#D48F6B'
+  gradient_color_6 = '#AAA493'
+  gradient_color_7 = '#c2c1c0'
+  gradient_color_8 = '#695d55'
 [general]
   bars = 16
   framerate = 59
